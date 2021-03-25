@@ -29,7 +29,7 @@ window.addEventListener('load', function(e) {
 var notif;
 function actualNotification() {
     var notifTitle = "I Liga Femenina de Padel CSNI, bienvenid@!";
-    var notifBody = "La aplicación está actualizada al día de hoy | v1.0.2";
+    var notifBody = "La aplicación está actualizada al día de hoy | v1.1.1";
     //var notifBody = "Has actualizado el sistema de notificaciones. A partir de ahora estarás al tanto de las últimas noticias.";
     var notifImg = './img/icon_64.png';
     var options = {
@@ -270,11 +270,6 @@ function groupLeaguesA() {
     }
     return groupSubA;
 };
-
-// IMPORTANTE PARA LOS CÁLCULOS!!!
-window.addEventListener("load", groupLeaguesA() );      //carga variable: groupSubA
-window.addEventListener("load", parejasRankingA() );    //carga variable: parejasJugRankA   
-
 function parejasGrupoA() {
     if(groupSubA.length > 0) {
         for(let i = 0; i < 6; i++) {
@@ -303,6 +298,8 @@ function parejasGrupoA() {
     return groupA;
 };
 // IMPORTANTE PARA LOS CÁLCULOS!!!
+window.addEventListener("load", groupLeaguesA() );      //carga variable: groupSubA
+window.addEventListener("load", parejasRankingA() );    //carga variable: parejasJugRankA   
 window.addEventListener("load", parejasGrupoA() );      //carga variable: groupA
 
 // Programación de partidos
@@ -1718,24 +1715,69 @@ window.addEventListener("load", includeResB2() );      //inners res B2
 // *********************************************
 //Clasificación a los cuadros
 let allTablesFinalA = [tablePosA1, tablePosA2, tablePosA3, tablePosA4, tablePosB1, tablePosB2];
-let cantClasifPorGrupo = 4;
+let cantClasifPorGrupo = 2;
+let cantMejTerceros = 4;
+let mejoresTerceros = new Array(cantMejTerceros);
 let clasificadosA = new Array();
 let octavosFinalA = new Array();
 let cuartosFinalA = new Array();
 let semisFinalA = new Array();
 let finalFinalA = new Array();
 function obtenerClasifA() {
-    let group = "A";
+    let terceros = new Array;
     for(let i=0; i < allTablesFinalA.length; i++) {
         for(let j=0; j < cantClasifPorGrupo; j++) {
             clasificadosA.push( new Clasificado(
-                group + (i+1),
+                groupSubA[i],
                 allTablesFinalA[i][j].ord_po,
                 allTablesFinalA[i][j].id_po,
                 allTablesFinalA[i][j].pts_po,
                 allTablesFinalA[i][j].elo_po
             ) );
         }
+    }
+    terceros = [tablePosA1[2], tablePosA2[2], tablePosA3[2], tablePosA4[2], tablePosB1[2], tablePosB2[2]];
+    
+    terceros.sort(function compareNumbers(a,b) {
+        //orden puntos DES
+        if (a.pts_po > b.pts_po) {
+            return -1;
+        }
+        else if (a.pts_po < b.pts_po) {
+            return 1;
+        }
+        else if (a.pts_po == b.pts_po) {
+            //orden diferencia sets DES
+            if (a.ds_po > b.ds_po) {
+                return -1;
+            }
+            else if (a.ds_po < b.ds_po) {
+                return 1;
+            }
+            else if (a.ds_po == b.ds_po) {
+                //orden diferencia games DES
+                if (a.dg_po > b.dg_po) {
+                    return -1;
+                }
+                else if (a.dg_po < b.dg_po) {
+                    return 1;
+                }
+                return 0;
+            };
+        };
+    });
+    mejoresTerceros[0] = terceros[0];
+    mejoresTerceros[1] = terceros[1];
+    mejoresTerceros[2] = terceros[2];
+    mejoresTerceros[3] = terceros[3];
+    for(let i=0; i < cantMejTerceros; i++) {
+        clasificadosA.push( new Clasificado(
+            "M3",
+            mejoresTerceros[i].ord_po,
+            mejoresTerceros[i].id_po,
+            mejoresTerceros[i].pts_po,
+            mejoresTerceros[i].elo_po
+        ) );
     }
     return clasificadosA;
 };
@@ -1745,18 +1787,18 @@ function octavosFA(g) {
     clasif[0] = g[0];
     clasif[1] = g[15];
     clasif[2] = g[5];
-    clasif[3] = g[10];
+    clasif[3] = g[3];
     clasif[4] = g[6];
-    clasif[5] = g[9];
-    clasif[6] = g[3];
-    clasif[7] = g[12];
-    clasif[8] = g[4];
-    clasif[9] = g[11];
-    clasif[10] = g[1];
-    clasif[11] = g[14];
-    clasif[12] = g[2];
+    clasif[5] = g[12];
+    clasif[6] = g[9];
+    clasif[7] = g[10];
+    clasif[8] = g[2];
+    clasif[9] = g[14];
+    clasif[10] = g[7];
+    clasif[11] = g[1];
+    clasif[12] = g[4];
     clasif[13] = g[13];
-    clasif[14] = g[7];
+    clasif[14] = g[11];
     clasif[15] = g[8];
 
     for(let i=0; i < clasif.length; i=i+2) {
