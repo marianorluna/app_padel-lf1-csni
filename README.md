@@ -20,17 +20,29 @@ A list of technologies used within the project:
 * [Javascript](https://262.ecma-international.org/6.0/): Version ES6
 ### Installation
 ***
-The application is accessed through the following link: LINK-HERE  
+The application is accessed through the following link: https://bit.ly/liga-fem-1-csni    
 To install the application on your computer or mobile device, you must follow the following steps:  
 1. **Open the application.** You will see a screen like the one below.  
 
-    ![Install PWA 1](LINK-IMAGE-HERE)
-2. After passing the main window, a pop-up window will open. **We select where it says: "Add to the home screen".**  
+    ![Install PWA 1](https://i.imgur.com/lMislN4.jpg)  
 
-    ![Install PWA 2](LINK-IMAGE-HERE)
-3. It asks us if we want to install the application. **We select install.**  
+2. Accept, when the pop-up window opens, requesting authorization to send notifications.  
 
-    ![Install PWA 3](LINK-IMAGE-HERE)
-4. Once installed, a shortcut button will appear on our screen. **We can already enter through it.**  
+    ![Install PWA 2](https://i.imgur.com/wZP1YdC.jpg)  
 
-    ![Install PWA 4](LINK-IMAGE-HERE)
+3. After passing the main window, a pop-up window will open. **We select where it says: "Add to the home screen".**  
+
+    ![Install PWA 3](https://i.imgur.com/N7bG5wN.jpg)  
+
+4. It asks us if we want to install the application. **We select install.**  
+
+    ![Install PWA 4](https://i.imgur.com/RNmID6w.jpg)  
+
+5. Once installed, a shortcut button will appear on our screen. **We can already enter through it.**  
+
+    ![Install PWA 5](https://i.imgur.com/cFVMAEF.jpg)  
+
+6. Screenshots of the installed application, without the web browser frame.  
+
+    ![Install PWA 6](https://i.imgur.com/qtUYknC.jpg)  
+    ![Install PWA 7](https://i.imgur.com/sifOubz.jpg)  
