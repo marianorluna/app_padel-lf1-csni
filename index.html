@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I LIGA FEMENINA DE PADEL CSNI 2021</title>
+    <meta name="description" content="Bienvenid@s a la aplicación de la I Liga Femenina de Padel CSNI, donde podrás encontrar información actualizada de los resultados y estadísticas de todos los partidos." />
+
+    <meta name="theme-color" content="#383f45" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <link rel="apple-touch-icon" href="./img/ligfem1.png" />
+    <link rel="apple-touch-startup-image" href="./img/ligfem1.png" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e73b09ad2f.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+    <div class="container" id="wrapper"> 
+        <div class="front-main" id="front-index">
+            <div class="front-cont">
+                <div class="front1">
+                    <img src=./img/ligfem1-wb.png alt="Logo" id="logo-ini" onclick="ingresar()" />
+                </div>
+                <p class="front-lang" id="fl-esp" onclick="tradESP()">ESP</p>
+                <p class="front-lang" id="fl-eng" onclick="tradENG()">ENG</p>
+                <p class="front-lang" id="fl-cat" onclick="tradCAT()">CAT</p>
+            </div>
+        </div>
+        <header class="header">
+            <a href="#" class="logo"><img src=./img/ligfem1-wb.png alt="Logo"></a>
+            <div class="title">
+                <h1 id="title-h1">Liga Femenina <span>de Padel</span></h1>
+            </div>
+            <div class="lang-menu">
+                <img class="world" src="./img/world.svg" alt="Ico Lang" />
+                <div class="lang-opc">
+                        <p class="link-lang" id="t-esp" onclick="tradESP()">Español</p>
+                        <p class="link-lang" id="t-eng" onclick="tradENG()">English</p>
+                        <p class="link-lang" id="t-cat" onclick="tradCAT()">Català</p>
+                </div>
+            </div>
+        </header>
+        <main class="main-container"> 
+            <nav class="menu-main">
+                <ul>
+                    <li><a href="#" id="text-news">Fecha límite - Fase de Liga hasta 09/05/2021</a></li>
+                </ul>
+            </nav>
+            <section class="ac-section sec1">
+                <div>
+                    <input id="ac-1" name="accordion-1" type="radio" checked class="ac-main" />
+                    <label for="ac-1" class="ac-title" id="lab-01">Informacion</label>
+                    <article class="ac-small">
+                        <div class="info-div">
+                            <div class="tab">
+                                <button class="tablinks3" onclick="openPest3(event, 'General')" id="defaultOpen3">General</button>
+                                <button class="tablinks3" onclick="openPest3(event, 'Noticias')" id="but-pest-01">Noticias</button>
+                            </div>
+                            <div id="General" class="tabcontent3">
+                                <div class="text-div">
+                                    <h2 id="h2-01">Objetivo</h2>
+                                    <p id="par-01">La I Liga Femenina de Pádel del Centre Esportiu Nova Icària tiene como objetivo fomentar la participación entre las socias del club y la práctica deportiva. La organización es realizada por las propias participantes.
+                                    </p>
+                                </div>
+                                <div class="text-div">
+                                    <h2 id="h2-02">Normas de la competición</h2>
+                                    <p id="par-02">La inscripción es de 20 euros por pareja (10 por cada participante) que se destinarán a premios, en su totalidad. El plazo para abonar la inscripción es el 15 de marzo de 2021, inclusive.</p>
+                                </div>
+                                <div class="text-div">
+                                    <h2 id="h2-03">Formato del torneo</h2>
+                                    <p id="par-03">Se establecen cuatro grupos de 6 parejas y 2 de 5 parejas. En cada grupo se enfrentan en modo liga, de todos contra todos. Las 2 primeras posicionadas, más las 4 mejores terceras de todos los grupos, pasan a fase eliminatoria. Los partidos los organizan las parejas que se enfrentan, en horario y lugar a convenir por ellas, respentando los plazos previstos. El orden de juego es indiferente. Se recomienda abrir grupos de whatsapp para coordinar las liguillas.</p>
+                                </div>
+                                <div class="text-div">
+                                    <h2 id="h2-04">Fechas</h2>
+                                    <p id="par-04">FASE LIGA hasta 9 de mayo de 2021.<br />FASE ELIMINATORIA hasta 27 de junio de 2021.</p>
+                                </div>
+                                <div class="text-div">
+                                    <h2 id="h2-05">Premios</h2>
+                                    <p id="par-05">Para Campeonas y Finalistas. Sorteo entre todas las que hayan jugado todos los partidos.</p>
+                                </div>
+                                <div class="text-div">
+                                    <h2 id="h2-06">APP</h2>
+                                    <p id="par-06">En esta aplicación podrá encontrar información actualizada de los resultados y estadísticas de todos los partidos.
+                                    </p>
+                                </div>
+                                <div class="text-div">
+                                    <h2 id="h2-07">FeedBack</h2>
+                                    <p id="par-07">Si tienes alguna sugerencia o comentario sobre la APP, o notas algún error en los datos, traducción o cualquier otro, puedes ponerte en contacto a través de Whatsapp y te estaremos respondiendo a la brevedad.
+                                    </p>
+                                </div>
+                                <a href="https://api.whatsapp.com/send?phone=34654060763" target="blank" class="ico-red">
+                                    <div class="contacto-w">
+                                        <p class="grupo-w" id="par-08">Contacto por Whatsapp</p>
+                                        <i class="fab fa-whatsapp-square"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="Noticias" class="tabcontent3">
+                                <div class="notif-solic">
+                                    <i class="far fa-bell"></i>
+                                    <p id="par-09">Activar las notificaciones</p>
+                                    <button class="notif-button" id="but-notif">Activar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-2" name="accordion-1" type="radio" class="ac-main" />
+                    <label for="ac-2" class="ac-title" id="lab-02">Inscriptas</label>
+                    <article class="ac-medium">
+                        <div class="tabla-inscriptosA">
+                            <div class="jug-data" id="jTablaTitleA">Grupo General</div>
+                            <div class="jug-data" id="jTablaCampo1A">Ranking</div>
+                            <div class="jug-data" id="jTablaCampo2A">Jugadora</div>
+                            <div class="jug-data" id="jA1id">1</div>
+                            <div class="jug-data" id="jA2id">2</div>
+                            <div class="jug-data" id="jA3id">3</div>
+                            <div class="jug-data" id="jA4id">4</div>
+                            <div class="jug-data" id="jA5id">5</div>
+                            <div class="jug-data" id="jA6id">6</div>
+                            <div class="jug-data" id="jA7id">7</div>
+                            <div class="jug-data" id="jA8id">8</div>
+                            <div class="jug-data" id="jA9id">9</div>
+                            <div class="jug-data" id="jA10id">10</div>
+                            <div class="jug-data" id="jA11id">11</div>
+                            <div class="jug-data" id="jA12id">12</div>
+                            <div class="jug-data" id="jA13id">13</div>
+                            <div class="jug-data" id="jA14id">14</div>
+                            <div class="jug-data" id="jA15id">15</div>
+                            <div class="jug-data" id="jA16id">16</div>
+                            <div class="jug-data" id="jA17id">17</div>
+                            <div class="jug-data" id="jA18id">18</div>
+                            <div class="jug-data" id="jA19id">19</div>
+                            <div class="jug-data" id="jA20id">20</div>
+                            <div class="jug-data" id="jA21id">21</div>
+                            <div class="jug-data" id="jA22id">22</div>
+                            <div class="jug-data" id="jA23id">23</div>
+                            <div class="jug-data" id="jA24id">24</div>
+                            <div class="jug-data" id="jA25id">25</div>
+                            <div class="jug-data" id="jA26id">26</div>
+                            <div class="jug-data" id="jA27id">27</div>
+                            <div class="jug-data" id="jA28id">28</div>
+                            <div class="jug-data" id="jA29id">29</div>
+                            <div class="jug-data" id="jA30id">30</div>
+                            <div class="jug-data" id="jA31id">31</div>
+                            <div class="jug-data" id="jA32id">32</div>
+                            <div class="jug-data" id="jA33id">33</div>
+                            <div class="jug-data" id="jA34id">34</div>
+                            <div class="jug-data" id="jA35id">35</div>
+                            <div class="jug-data" id="jA36id">36</div>
+                            <div class="jug-data" id="jA37id">37</div>
+                            <div class="jug-data" id="jA38id">38</div>
+                            <div class="jug-data" id="jA39id">39</div>
+                            <div class="jug-data" id="jA40id">40</div>
+                            <div class="jug-data" id="jA41id">41</div>
+                            <div class="jug-data" id="jA42id">42</div>
+                            <div class="jug-data" id="jA43id">43</div>
+                            <div class="jug-data" id="jA44id">44</div>
+                            <div class="jug-data" id="jA45id">45</div>
+                            <div class="jug-data" id="jA46id">46</div>
+                            <div class="jug-data" id="jA47id">47</div>
+                            <div class="jug-data" id="jA48id">48</div>
+                            <div class="jug-data" id="jA49id">49</div>
+                            <div class="jug-data" id="jA50id">50</div>
+                            <div class="jug-data" id="jA51id">51</div>
+                            <div class="jug-data" id="jA52id">52</div>
+                            <div class="jug-data" id="jA53id">53</div>
+                            <div class="jug-data" id="jA54id">54</div>
+                            <div class="jug-data" id="jA55id">55</div>
+                            <div class="jug-data" id="jA56id">56</div>
+                            <div class="jug-data" id="jA57id">57</div>
+                            <div class="jug-data" id="jA58id">58</div>
+                            <div class="jug-data" id="jA59id">59</div>
+                            <div class="jug-data" id="jA60id">60</div>
+                            <div class="jug-data" id="jA61id">61</div>
+                            <div class="jug-data" id="jA62id">62</div>
+                            <div class="jug-data" id="jA63id">63</div>
+                            <div class="jug-data" id="jA64id">64</div>
+                            <div class="jug-data" id="jA65id">65</div>
+                            <div class="jug-data" id="jA66id">66</div>
+                            <div class="jug-data" id="jA67id">67</div>
+                            <div class="jug-data" id="jA68id">68</div>
+                            <div class="jug-data" id="jA1">Marta Prat</div>
+                            <div class="jug-data" id="jA2">Anna Porta</div>
+                            <div class="jug-data" id="jA3">Paula Arnaldo</div>
+                            <div class="jug-data" id="jA4">Dolors Rusinés</div>
+                            <div class="jug-data" id="jA5">Lupe Martín</div>
+                            <div class="jug-data" id="jA6">Marta Puig</div>
+                            <div class="jug-data" id="jA7">Esther Guixà</div>
+                            <div class="jug-data" id="jA8">Eva Mauri</div>
+                            <div class="jug-data" id="jA9">Gemma Vázquez</div>
+                            <div class="jug-data" id="jA10">Eva Teruel</div>
+                            <div class="jug-data" id="jA11">Elisabeth Jori</div>
+                            <div class="jug-data" id="jA12">Mireia Diaz</div>
+                            <div class="jug-data" id="jA13">Sonia Forcales</div>
+                            <div class="jug-data" id="jA14">Iballa Alvarez</div>
+                            <div class="jug-data" id="jA15">Elena Recasens</div>
+                            <div class="jug-data" id="jA16">Eva Sanchis</div>
+                            <div class="jug-data" id="jA17">Rocio Baró</div>
+                            <div class="jug-data" id="jA18">Mònica Pascual</div>
+                            <div class="jug-data" id="jA19">Pili Ortiz</div>
+                            <div class="jug-data" id="jA20">Silvia Navarro</div>
+                            <div class="jug-data" id="jA21">Ana Serrano</div>
+                            <div class="jug-data" id="jA22">Julia Oliveros</div>
+                            <div class="jug-data" id="jA23">Esther Morell</div>
+                            <div class="jug-data" id="jA24">Marta Mauri</div>
+                            <div class="jug-data" id="jA25">Mar Ferrera</div>
+                            <div class="jug-data" id="jA26">Nuria Pedrosa</div>
+                            <div class="jug-data" id="jA27">Xenia Roa</div>
+                            <div class="jug-data" id="jA28">Maite Borrega</div>
+                            <div class="jug-data" id="jA29">Cecile Chavoin</div>
+                            <div class="jug-data" id="jA30">Elvira Bosch</div>
+                            <div class="jug-data" id="jA31">Montse Cardona</div>
+                            <div class="jug-data" id="jA32">Itziar Escudero</div>
+                            <div class="jug-data" id="jA33">Verlee Lemstra</div>
+                            <div class="jug-data" id="jA34">Meritxell Armengol</div>
+                            <div class="jug-data" id="jA35">Inma Trullas</div>
+                            <div class="jug-data" id="jA36">Masús Carnero</div>
+                            <div class="jug-data" id="jA37">Susana Folch</div>
+                            <div class="jug-data" id="jA38">Natalie Karakoussi</div>
+                            <div class="jug-data" id="jA39">Vanessa Saura</div>
+                            <div class="jug-data" id="jA40">Sílvia Equisoain</div>
+                            <div class="jug-data" id="jA41">Matilde Ayesta</div>
+                            <div class="jug-data" id="jA42">Senda Rovira</div>
+                            <div class="jug-data" id="jA43">Marta Pursals</div>
+                            <div class="jug-data" id="jA44">Noemí Olona</div>
+                            <div class="jug-data" id="jA45">Elvira Andreu</div>
+                            <div class="jug-data" id="jA46">Encarna Maldonado</div>
+                            <div class="jug-data" id="jA47">Marga Garcia</div>
+                            <div class="jug-data" id="jA48">Eva Garachana</div>
+                            <div class="jug-data" id="jA49">Laura Broc</div>
+                            <div class="jug-data" id="jA50">Laia Cadenas</div>
+                            <div class="jug-data" id="jA51">Catriona Johnstone</div>
+                            <div class="jug-data" id="jA52">Miriam Serrano</div>
+                            <div class="jug-data" id="jA53">Anna Barnils</div>
+                            <div class="jug-data" id="jA54">Clara Bassols</div>
+                            <div class="jug-data" id="jA55">Patricia Lora</div>
+                            <div class="jug-data" id="jA56">Gema del Hoyo</div>
+                            <div class="jug-data" id="jA57">Marta Escartin</div>
+                            <div class="jug-data" id="jA58">Susanna R Riqué</div>
+                            <div class="jug-data" id="jA59">Susana P Peinado</div>
+                            <div class="jug-data" id="jA60">Judit Ibañez</div>
+                            <div class="jug-data" id="jA61">Miriam Sola</div>
+                            <div class="jug-data" id="jA62">Martina Weiss</div>
+                            <div class="jug-data" id="jA63">Clara Pla</div>
+                            <div class="jug-data" id="jA64">Marisa Martin</div>
+                            <div class="jug-data" id="jA65">Yolanda Gaset</div>
+                            <div class="jug-data" id="jA66">Susana V Vendrell</div>
+                            <div class="jug-data" id="jA67">Helena Bertrand</div>
+                            <div class="jug-data" id="jA68">Montse  Armengou</div>
+                        </div>
+                        <br />
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-3" name="accordion-1" type="radio" class="ac-main" />
+                    <label for="ac-3" class="ac-title" id="lab-03">Estadisticas</label>
+                    <article class="ac-large">
+                        <div class="estad-div">
+                            <div class="tab">
+                                <button class="tablinks1" onclick="openPest1(event, 'Grupos')" id="defaultOpen1">Grupos</button>
+                                <button class="tablinks1" onclick="openPest1(event, 'Resultados')" id="but-pest-02">Resultados</button>
+                                <button class="tablinks1" onclick="openPest1(event, 'Posiciones')" id="but-pest-03">Posiciones</button>
+                            </div>
+                            <div id="Grupos" class="tabcontent">
+                                <div class="grupos6P">
+                                    <div class="jug-grupo" id="jGrupoTitle-A1">Grupo A</div>
+                                    <div class="jug-grupo" id="jGrupoCampo1-A1">N°</div>
+                                    <div class="jug-grupo" id="jGrupoCampo2-A1">ID</div>
+                                    <div class="jug-grupo" id="jGrupoCampo3-A1">Jugadora 1</div>
+                                    <div class="jug-grupo" id="jGrupoCampo4-A1">Jugadora 2</div>
+                                    <div class="jug-grupo" id="jOrd-A1-1">1</div>
+                                    <div class="jug-grupo" id="jOrd-A1-2">2</div>
+                                    <div class="jug-grupo" id="jOrd-A1-3">3</div>
+                                    <div class="jug-grupo" id="jOrd-A1-4">4</div>
+                                    <div class="jug-grupo" id="jOrd-A1-5">5</div>
+                                    <div class="jug-grupo" id="jOrd-A1-6">6</div>
+                                    <div class="jug-grupo" id="jP-A1-1">P01</div>
+                                    <div class="jug-grupo" id="jP-A1-2">P02</div>
+                                    <div class="jug-grupo" id="jP-A1-3">P03</div>
+                                    <div class="jug-grupo" id="jP-A1-4">P04</div>
+                                    <div class="jug-grupo" id="jP-A1-5">P05</div>
+                                    <div class="jug-grupo" id="jP-A1-6">P06</div>
+                                    <div class="jug-grupo" id="j1-A1-1">Marta Prat</div>
+                                    <div class="jug-grupo" id="j1-A1-2">Paula Arnaldo</div>
+                                    <div class="jug-grupo" id="j1-A1-3">Lupe Martín</div>
+                                    <div class="jug-grupo" id="j1-A1-4">Esther Guixà</div>
+                                    <div class="jug-grupo" id="j1-A1-5">Gemma Vázquez</div>
+                                    <div class="jug-grupo" id="j1-A1-6">Elisabeth Jori</div>
+                                    <div class="jug-grupo" id="j2-A1-1">Anna Porta</div>
+                                    <div class="jug-grupo" id="j2-A1-2">Dolors Rusinés</div>
+                                    <div class="jug-grupo" id="j2-A1-3">Marta Puig</div>
+                                    <div class="jug-grupo" id="j2-A1-4">Eva Mauri</div>
+                                    <div class="jug-grupo" id="j2-A1-5">Eva Teruel</div>
+                                    <div class="jug-grupo" id="j2-A1-6">Mireia Diaz</div>
+                                </div>
+                                <a href="#" target="blank" class="ico-red">
+                                    <div class="contacto-w">
+                                        <p class="grupo-w">Whatsapp A</p>
+                                        <i class="fab fa-whatsapp-square"></i>
+                                    </div>
+                                </a>
+                                <div class="grupos6P">
+                                    <div class="jug-grupo" id="jGrupoTitle-A2">Grupo B</div>
+                                    <div class="jug-grupo" id="jGrupoCampo1-A2">N°</div>
+                                    <div class="jug-grupo" id="jGrupoCampo2-A2">ID</div>
+                                    <div class="jug-grupo" id="jGrupoCampo3-A2">Jugadora 1</div>
+                                    <div class="jug-grupo" id="jGrupoCampo4-A2">Jugadora 2</div>
+                                    <div class="jug-grupo" id="jOrd-A2-1">1</div>
+                                    <div class="jug-grupo" id="jOrd-A2-2">2</div>
+                                    <div class="jug-grupo" id="jOrd-A2-3">3</div>
+                                    <div class="jug-grupo" id="jOrd-A2-4">4</div>
+                                    <div class="jug-grupo" id="jOrd-A2-5">5</div>
+                                    <div class="jug-grupo" id="jOrd-A2-6">6</div>
+                                    <div class="jug-grupo" id="jiD-A2-1">P07</div>
+                                    <div class="jug-grupo" id="jiD-A2-2">P08</div>
+                                    <div class="jug-grupo" id="jiD-A2-3">P09</div>
+                                    <div class="jug-grupo" id="jiD-A2-4">P10</div>
+                                    <div class="jug-grupo" id="jiD-A2-5">P11</div>
+                                    <div class="jug-grupo" id="jiD-A2-6">P12</div>
+                                    <div class="jug-grupo" id="j1-A2-1">Sonia Forcales</div>
+                                    <div class="jug-grupo" id="j1-A2-2">Elena Recasens</div>
+                                    <div class="jug-grupo" id="j1-A2-3">Rocio Baró</div>
+                                    <div class="jug-grupo" id="j1-A2-4">Pili Ortiz</div>
+                                    <div class="jug-grupo" id="j1-A2-5">Ana Serrano</div>
+                                    <div class="jug-grupo" id="j1-A2-6">Esther Morell</div>
+                                    <div class="jug-grupo" id="j2-A2-1">Iballa Alvarez</div>
+                                    <div class="jug-grupo" id="j2-A2-2">Eva Sanchis</div>
+                                    <div class="jug-grupo" id="j2-A2-3">Mònica Pascual</div>
+                                    <div class="jug-grupo" id="j2-A2-4">Silvia Navarro</div>
+                                    <div class="jug-grupo" id="j2-A2-5">Julia Oliveros</div>
+                                    <div class="jug-grupo" id="j2-A2-6">Marta Mauri</div>
+                                </div>
+                                <a href="#" target="blank" class="ico-red">
+                                    <div class="contacto-w">
+                                        <p class="grupo-w">Whatsapp B</p>
+                                        <i class="fab fa-whatsapp-square"></i>
+                                    </div>
+                                </a>
+                                <div class="grupos5P">
+                                    <div class="jug-grupo" id="jGrupoTitle-A3">Grupo C</div>
+                                    <div class="jug-grupo" id="jGrupoCampo1-A3">N°</div>
+                                    <div class="jug-grupo" id="jGrupoCampo2-A3">ID</div>
+                                    <div class="jug-grupo" id="jGrupoCampo3-A3">Jugadora 1</div>
+                                    <div class="jug-grupo" id="jGrupoCampo4-A3">Jugadora 2</div>
+                                    <div class="jug-grupo" id="jOrd-A3-1">1</div>
+                                    <div class="jug-grupo" id="jOrd-A3-2">2</div>
+                                    <div class="jug-grupo" id="jOrd-A3-3">3</div>
+                                    <div class="jug-grupo" id="jOrd-A3-4">4</div>
+                                    <div class="jug-grupo" id="jOrd-A3-5">5</div>
+                                    <div class="jug-grupo" id="jiD-A3-1">P13</div>
+                                    <div class="jug-grupo" id="jiD-A3-2">P14</div>
+                                    <div class="jug-grupo" id="jiD-A3-3">P15</div>
+                                    <div class="jug-grupo" id="jiD-A3-4">P16</div>
+                                    <div class="jug-grupo" id="jiD-A3-5">P17</div>
+                                    <div class="jug-grupo" id="j1-A3-1">Mar Ferrera</div>
+                                    <div class="jug-grupo" id="j1-A3-2">Xenia Roa</div>
+                                    <div class="jug-grupo" id="j1-A3-3">Cecile Chavoin</div>
+                                    <div class="jug-grupo" id="j1-A3-4">Montse Cardona</div>
+                                    <div class="jug-grupo" id="j1-A3-5">Verlee Lemstra</div>
+                                    <div class="jug-grupo" id="j2-A3-1">Nuria Pedrosa</div>
+                                    <div class="jug-grupo" id="j2-A3-2">Maite Borrega</div>
+                                    <div class="jug-grupo" id="j2-A3-3">Elvira Bosch</div>
+                                    <div class="jug-grupo" id="j2-A3-4">Itziar Escudero</div>
+                                    <div class="jug-grupo" id="j2-A3-5">Meritxell Armengol</div>
+                                </div>
+                                <a href="#" target="blank" class="ico-red">
+                                    <div class="contacto-w">
+                                        <p class="grupo-w">Whatsapp C</p>
+                                        <i class="fab fa-whatsapp-square"></i>
+                                    </div>
+                                </a>
+                                <div class="grupos5P">
+                                    <div class="jug-grupo" id="jGrupoTitle-A4">Grupo D</div>
+                                    <div class="jug-grupo" id="jGrupoCampo1-A4">N°</div>
+                                    <div class="jug-grupo" id="jGrupoCampo2-A4">ID</div>
+                                    <div class="jug-grupo" id="jGrupoCampo3-A4">Jugadora 1</div>
+                                    <div class="jug-grupo" id="jGrupoCampo4-A4">Jugadora 2</div>
+                                    <div class="jug-grupo" id="jOrd-A4-1">1</div>
+                                    <div class="jug-grupo" id="jOrd-A4-2">2</div>
+                                    <div class="jug-grupo" id="jOrd-A4-3">3</div>
+                                    <div class="jug-grupo" id="jOrd-A4-4">4</div>
+                                    <div class="jug-grupo" id="jOrd-A4-5">5</div>
+                                    <div class="jug-grupo" id="jiD-A4-1">P18</div>
+                                    <div class="jug-grupo" id="jiD-A4-2">P19</div>
+                                    <div class="jug-grupo" id="jiD-A4-3">P20</div>
+                                    <div class="jug-grupo" id="jiD-A4-4">P21</div>
+                                    <div class="jug-grupo" id="jiD-A4-5">P22</div>
+                                    <div class="jug-grupo" id="j1-A4-1">Inma Trullas</div>
+                                    <div class="jug-grupo" id="j1-A4-2">Susana Folch</div>
+                                    <div class="jug-grupo" id="j1-A4-3">Vanessa Saura</div>
+                                    <div class="jug-grupo" id="j1-A4-4">Matilde Ayesta</div>
+                                    <div class="jug-grupo" id="j1-A4-5">Marta Pursals</div>
+                                    <div class="jug-grupo" id="j2-A4-1">Masús Carnero</div>
+                                    <div class="jug-grupo" id="j2-A4-2">Natalie Karakoussi</div>
+                                    <div class="jug-grupo" id="j2-A4-3">Sílvia Equisoain</div>
+                                    <div class="jug-grupo" id="j2-A4-4">Senda Rovira</div>
+                                    <div class="jug-grupo" id="j2-A4-5">Noemí Olona</div>
+                                </div>
+                                <a href="#" target="blank" class="ico-red">
+                                    <div class="contacto-w">
+                                        <p class="grupo-w">Whatsapp D</p>
+                                        <i class="fab fa-whatsapp-square"></i>
+                                    </div>
+                                </a>
+                                <div class="grupos6P">
+                                    <div class="jug-grupo" id="jGrupoTitle-B1">Grupo E</div>
+                                    <div class="jug-grupo" id="jGrupoCampo1-B1">N°</div>
+                                    <div class="jug-grupo" id="jGrupoCampo2-B1">ID</div>
+                                    <div class="jug-grupo" id="jGrupoCampo3-B1">Jugadora 1</div>
+                                    <div class="jug-grupo" id="jGrupoCampo4-B1">Jugadora 2</div>
+                                    <div class="jug-grupo" id="jOrd-B1-1">1</div>
+                                    <div class="jug-grupo" id="jOrd-B1-2">2</div>
+                                    <div class="jug-grupo" id="jOrd-B1-3">3</div>
+                                    <div class="jug-grupo" id="jOrd-B1-4">4</div>
+                                    <div class="jug-grupo" id="jOrd-B1-5">5</div>
+                                    <div class="jug-grupo" id="jOrd-B1-6">6</div>
+                                    <div class="jug-grupo" id="jiD-B1-1">P23</div>
+                                    <div class="jug-grupo" id="jiD-B1-2">P24</div>
+                                    <div class="jug-grupo" id="jiD-B1-3">P25</div>
+                                    <div class="jug-grupo" id="jiD-B1-4">P26</div>
+                                    <div class="jug-grupo" id="jiD-B1-5">P27</div>
+                                    <div class="jug-grupo" id="jiD-B1-6">P28</div>
+                                    <div class="jug-grupo" id="j1-B1-1">Elvira Andreu</div>
+                                    <div class="jug-grupo" id="j1-B1-2">Marga Garcia</div>
+                                    <div class="jug-grupo" id="j1-B1-3">Laura Broc</div>
+                                    <div class="jug-grupo" id="j1-B1-4">Catriona Johnstone</div>
+                                    <div class="jug-grupo" id="j1-B1-5">Anna Barnils</div>
+                                    <div class="jug-grupo" id="j1-B1-6">Patricia Lora</div>
+                                    <div class="jug-grupo" id="j2-B1-1">Encarna Maldonado</div>
+                                    <div class="jug-grupo" id="j2-B1-2">Eva Garachana</div>
+                                    <div class="jug-grupo" id="j2-B1-3">Laia Cadenas</div>
+                                    <div class="jug-grupo" id="j2-B1-4">Miriam Serrano</div>
+                                    <div class="jug-grupo" id="j2-B1-5">Clara Bassols</div>
+                                    <div class="jug-grupo" id="j2-B1-6">Gema del Hoyo</div>
+                                </div>
+                                <a href="#" target="blank" class="ico-red">
+                                    <div class="contacto-w">
+                                        <p class="grupo-w">Whatsapp E</p>
+                                        <i class="fab fa-whatsapp-square"></i>
+                                    </div>
+                                </a>
+                                <div class="grupos6P">
+                                    <div class="jug-grupo" id="jGrupoTitle-B2">Grupo F</div>
+                                    <div class="jug-grupo" id="jGrupoCampo1-B2">N°</div>
+                                    <div class="jug-grupo" id="jGrupoCampo2-B2">ID</div>
+                                    <div class="jug-grupo" id="jGrupoCampo3-B2">Jugadora 1</div>
+                                    <div class="jug-grupo" id="jGrupoCampo4-B2">Jugadora 2</div>
+                                    <div class="jug-grupo" id="jOrd-B2-1">1</div>
+                                    <div class="jug-grupo" id="jOrd-B2-2">2</div>
+                                    <div class="jug-grupo" id="jOrd-B2-3">3</div>
+                                    <div class="jug-grupo" id="jOrd-B2-4">4</div>
+                                    <div class="jug-grupo" id="jOrd-B2-5">5</div>
+                                    <div class="jug-grupo" id="jOrd-B2-6">6</div>
+                                    <div class="jug-grupo" id="jiD-B2-1">P29</div>
+                                    <div class="jug-grupo" id="jiD-B2-2">P30</div>
+                                    <div class="jug-grupo" id="jiD-B2-3">P31</div>
+                                    <div class="jug-grupo" id="jiD-B2-4">P32</div>
+                                    <div class="jug-grupo" id="jiD-B2-5">P33</div>
+                                    <div class="jug-grupo" id="jiD-B2-6">P34</div>
+                                    <div class="jug-grupo" id="j1-B2-1">Marta Escartin</div>
+                                    <div class="jug-grupo" id="j1-B2-2">Susana P Peinado</div>
+                                    <div class="jug-grupo" id="j1-B2-3">Miriam Sola</div>
+                                    <div class="jug-grupo" id="j1-B2-4">Clara Pla</div>
+                                    <div class="jug-grupo" id="j1-B2-5">Yolanda Gaset</div>
+                                    <div class="jug-grupo" id="j1-B2-6">Helena Bertrand</div>
+                                    <div class="jug-grupo" id="j2-B2-1">Susanna R Riqué</div>
+                                    <div class="jug-grupo" id="j2-B2-2">Judit Ibañez</div>
+                                    <div class="jug-grupo" id="j2-B2-3">Martina Weiss</div>
+                                    <div class="jug-grupo" id="j2-B2-4">Marisa Martin</div>
+                                    <div class="jug-grupo" id="j2-B2-5">Susana V Vendrell</div>
+                                    <div class="jug-grupo" id="j2-B2-6">Montse  Armengou</div>
+                                </div>
+                                <a href="#" target="blank" class="ico-red">
+                                    <div class="contacto-w">
+                                        <p class="grupo-w">Whatsapp F</p>
+                                        <i class="fab fa-whatsapp-square"></i>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="Resultados" class="tabcontent">
+                                <div class="estad-div">
+                                    <div class="tab">
+                                        <button class="tablinks2" onclick="openPest2(event, 'ra1')" id="defaultOpen2">A</button>
+                                        <button class="tablinks2" onclick="openPest2(event, 'ra2')">B</button>
+                                        <button class="tablinks2" onclick="openPest2(event, 'ra3')">C</button>
+                                        <button class="tablinks2" onclick="openPest2(event, 'ra4')">D</button>
+                                        <button class="tablinks2" onclick="openPest2(event, 'rb1')">E</button>
+                                        <button class="tablinks2" onclick="openPest2(event, 'rb2')">F</button>
+                                    </div>
+                                    <div id="ra1" class="tabcontent2 resA1">
+                                        <div class="partidoJ" id="pSubA1G1">
+                                            <div class="res-data res-ok" id="p1paIda1">P1</div>
+                                            <div class="res-data" id="p1par1a1">P01</div>
+                                            <div class="res-data" id="p1par2a1">P05</div>
+                                            <div class="res-data" id="p1s1p1a1">0</div>
+                                            <div class="res-data" id="p1s1p2a1">0</div>
+                                            <div class="res-data" id="p1s2p1a1">0</div>
+                                            <div class="res-data" id="p1s2p2a1">0</div>
+                                            <div class="res-data" id="p1s3p1a1">0</div>
+                                            <div class="res-data" id="p1s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G2">
+                                            <div class="res-data res-ok" id="p2paIda1">P2</div>
+                                            <div class="res-data" id="p2par1a1">P01</div>
+                                            <div class="res-data" id="p2par2a1">P09</div>
+                                            <div class="res-data" id="p2s1p1a1">0</div>
+                                            <div class="res-data" id="p2s1p2a1">0</div>
+                                            <div class="res-data" id="p2s2p1a1">0</div>
+                                            <div class="res-data" id="p2s2p2a1">0</div>
+                                            <div class="res-data" id="p2s3p1a1">0</div>
+                                            <div class="res-data" id="p2s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G3">
+                                            <div class="res-data res-ok" id="p3paIda1">P3</div>
+                                            <div class="res-data" id="p3par1a1">P01</div>
+                                            <div class="res-data" id="p3par2a1">P13</div>
+                                            <div class="res-data" id="p3s1p1a1">3</div>
+                                            <div class="res-data" id="p3s1p2a1">6</div>
+                                            <div class="res-data" id="p3s2p1a1">3</div>
+                                            <div class="res-data" id="p3s2p2a1">6</div>
+                                            <div class="res-data" id="p3s3p1a1">0</div>
+                                            <div class="res-data" id="p3s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G4">
+                                            <div class="res-data res-ok" id="p4paIda1">P4</div>
+                                            <div class="res-data" id="p4par1a1">P01</div>
+                                            <div class="res-data" id="p4par2a1">P17</div>
+                                            <div class="res-data" id="p4s1p1a1">0</div>
+                                            <div class="res-data" id="p4s1p2a1">0</div>
+                                            <div class="res-data" id="p4s2p1a1">0</div>
+                                            <div class="res-data" id="p4s2p2a1">0</div>
+                                            <div class="res-data" id="p4s3p1a1">0</div>
+                                            <div class="res-data" id="p4s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G5">
+                                            <div class="res-data res-ok" id="p5paIda1">P5</div>
+                                            <div class="res-data" id="p5par1a1">P01</div>
+                                            <div class="res-data" id="p5par2a1">P21</div>
+                                            <div class="res-data" id="p5s1p1a1">0</div>
+                                            <div class="res-data" id="p5s1p2a1">0</div>
+                                            <div class="res-data" id="p5s2p1a1">0</div>
+                                            <div class="res-data" id="p5s2p2a1">0</div>
+                                            <div class="res-data" id="p5s3p1a1">0</div>
+                                            <div class="res-data" id="p5s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G6">
+                                            <div class="res-data res-ok" id="p6paIda1">P6</div>
+                                            <div class="res-data" id="p6par1a1">P05</div>
+                                            <div class="res-data" id="p6par2a1">P09</div>
+                                            <div class="res-data" id="p6s1p1a1">6</div>
+                                            <div class="res-data" id="p6s1p2a1">3</div>
+                                            <div class="res-data" id="p6s2p1a1">6</div>
+                                            <div class="res-data" id="p6s2p2a1">4</div>
+                                            <div class="res-data" id="p6s3p1a1">0</div>
+                                            <div class="res-data" id="p6s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G7">
+                                            <div class="res-data res-ok" id="p7paIda1">P7</div>
+                                            <div class="res-data" id="p7par1a1">P05</div>
+                                            <div class="res-data" id="p7par2a1">P13</div>
+                                            <div class="res-data" id="p7s1p1a1">0</div>
+                                            <div class="res-data" id="p7s1p2a1">0</div>
+                                            <div class="res-data" id="p7s2p1a1">0</div>
+                                            <div class="res-data" id="p7s2p2a1">0</div>
+                                            <div class="res-data" id="p7s3p1a1">0</div>
+                                            <div class="res-data" id="p7s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G8">
+                                            <div class="res-data res-ok" id="p8paIda1">P8</div>
+                                            <div class="res-data" id="p8par1a1">P05</div>
+                                            <div class="res-data" id="p8par2a1">P17</div>
+                                            <div class="res-data" id="p8s1p1a1">0</div>
+                                            <div class="res-data" id="p8s1p2a1">0</div>
+                                            <div class="res-data" id="p8s2p1a1">0</div>
+                                            <div class="res-data" id="p8s2p2a1">0</div>
+                                            <div class="res-data" id="p8s3p1a1">0</div>
+                                            <div class="res-data" id="p8s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G9">
+                                            <div class="res-data res-ok" id="p9paIda1">P9</div>
+                                            <div class="res-data" id="p9par1a1">P05</div>
+                                            <div class="res-data" id="p9par2a1">P21</div>
+                                            <div class="res-data" id="p9s1p1a1">0</div>
+                                            <div class="res-data" id="p9s1p2a1">0</div>
+                                            <div class="res-data" id="p9s2p1a1">0</div>
+                                            <div class="res-data" id="p9s2p2a1">0</div>
+                                            <div class="res-data" id="p9s3p1a1">0</div>
+                                            <div class="res-data" id="p9s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G10">
+                                            <div class="res-data res-ok" id="p10paIda1">P10</div>
+                                            <div class="res-data" id="p10par1a1">P09</div>
+                                            <div class="res-data" id="p10par2a1">P13</div>
+                                            <div class="res-data" id="p10s1p1a1">0</div>
+                                            <div class="res-data" id="p10s1p2a1">0</div>
+                                            <div class="res-data" id="p10s2p1a1">0</div>
+                                            <div class="res-data" id="p10s2p2a1">0</div>
+                                            <div class="res-data" id="p10s3p1a1">0</div>
+                                            <div class="res-data" id="p10s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G11">
+                                            <div class="res-data res-ok" id="p11paIda1">P11</div>
+                                            <div class="res-data" id="p11par1a1">P09</div>
+                                            <div class="res-data" id="p11par2a1">P17</div>
+                                            <div class="res-data" id="p11s1p1a1">6</div>
+                                            <div class="res-data" id="p11s1p2a1">1</div>
+                                            <div class="res-data" id="p11s2p1a1">6</div>
+                                            <div class="res-data" id="p11s2p2a1">3</div>
+                                            <div class="res-data" id="p11s3p1a1">0</div>
+                                            <div class="res-data" id="p11s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G12">
+                                            <div class="res-data res-ok" id="p12paIda1">P12</div>
+                                            <div class="res-data" id="p12par1a1">P09</div>
+                                            <div class="res-data" id="p12par2a1">P21</div>
+                                            <div class="res-data" id="p12s1p1a1">0</div>
+                                            <div class="res-data" id="p12s1p2a1">0</div>
+                                            <div class="res-data" id="p12s2p1a1">0</div>
+                                            <div class="res-data" id="p12s2p2a1">0</div>
+                                            <div class="res-data" id="p12s3p1a1">0</div>
+                                            <div class="res-data" id="p12s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G13">
+                                            <div class="res-data res-ok" id="p13paIda1">P13</div>
+                                            <div class="res-data" id="p13par1a1">P13</div>
+                                            <div class="res-data" id="p13par2a1">P17</div>
+                                            <div class="res-data" id="p13s1p1a1">6</div>
+                                            <div class="res-data" id="p13s1p2a1">2</div>
+                                            <div class="res-data" id="p13s2p1a1">6</div>
+                                            <div class="res-data" id="p13s2p2a1">2</div>
+                                            <div class="res-data" id="p13s3p1a1">0</div>
+                                            <div class="res-data" id="p13s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G14">
+                                            <div class="res-data res-ok" id="p14paIda1">P14</div>
+                                            <div class="res-data" id="p14par1a1">P13</div>
+                                            <div class="res-data" id="p14par2a1">P21</div>
+                                            <div class="res-data" id="p14s1p1a1">0</div>
+                                            <div class="res-data" id="p14s1p2a1">0</div>
+                                            <div class="res-data" id="p14s2p1a1">0</div>
+                                            <div class="res-data" id="p14s2p2a1">0</div>
+                                            <div class="res-data" id="p14s3p1a1">0</div>
+                                            <div class="res-data" id="p14s3p2a1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA1G15">
+                                            <div class="res-data res-ok" id="p15paIda1">P15</div>
+                                            <div class="res-data" id="p15par1a1">P17</div>
+                                            <div class="res-data" id="p15par2a1">P21</div>
+                                            <div class="res-data" id="p15s1p1a1">0</div>
+                                            <div class="res-data" id="p15s1p2a1">0</div>
+                                            <div class="res-data" id="p15s2p1a1">0</div>
+                                            <div class="res-data" id="p15s2p2a1">0</div>
+                                            <div class="res-data" id="p15s3p1a1">0</div>
+                                            <div class="res-data" id="p15s3p2a1">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="ra2" class="tabcontent2 resA2">
+                                        <div class="partidoJ" id="pSubA2G1">
+                                            <div class="res-data res-ok" id="p1paIda2">P1</div>
+                                            <div class="res-data" id="p1par1a2">P02</div>
+                                            <div class="res-data" id="p1par2a2">P06</div>
+                                            <div class="res-data" id="p1s1p1a2">4</div>
+                                            <div class="res-data" id="p1s1p2a2">6</div>
+                                            <div class="res-data" id="p1s2p1a2">6</div>
+                                            <div class="res-data" id="p1s2p2a2">3</div>
+                                            <div class="res-data" id="p1s3p1a2">2</div>
+                                            <div class="res-data" id="p1s3p2a2">6</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G2">
+                                            <div class="res-data res-ok" id="p2paIda2">P2</div>
+                                            <div class="res-data" id="p2par1a2">P02</div>
+                                            <div class="res-data" id="p2par2a2">P10</div>
+                                            <div class="res-data" id="p2s1p1a2">6</div>
+                                            <div class="res-data" id="p2s1p2a2">3</div>
+                                            <div class="res-data" id="p2s2p1a2">6</div>
+                                            <div class="res-data" id="p2s2p2a2">4</div>
+                                            <div class="res-data" id="p2s3p1a2">0</div>
+                                            <div class="res-data" id="p2s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G3">
+                                            <div class="res-data res-ok" id="p3paIda2">P3</div>
+                                            <div class="res-data" id="p3par1a2">P02</div>
+                                            <div class="res-data" id="p3par2a2">P14</div>
+                                            <div class="res-data" id="p3s1p1a2">0</div>
+                                            <div class="res-data" id="p3s1p2a2">0</div>
+                                            <div class="res-data" id="p3s2p1a2">0</div>
+                                            <div class="res-data" id="p3s2p2a2">0</div>
+                                            <div class="res-data" id="p3s3p1a2">0</div>
+                                            <div class="res-data" id="p3s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G4">
+                                            <div class="res-data res-ok" id="p4paIda2">P4</div>
+                                            <div class="res-data" id="p4par1a2">P02</div>
+                                            <div class="res-data" id="p4par2a2">P18</div>
+                                            <div class="res-data" id="p4s1p1a2">0</div>
+                                            <div class="res-data" id="p4s1p2a2">0</div>
+                                            <div class="res-data" id="p4s2p1a2">0</div>
+                                            <div class="res-data" id="p4s2p2a2">0</div>
+                                            <div class="res-data" id="p4s3p1a2">0</div>
+                                            <div class="res-data" id="p4s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G5">
+                                            <div class="res-data res-ok" id="p5paIda2">P5</div>
+                                            <div class="res-data" id="p5par1a2">P02</div>
+                                            <div class="res-data" id="p5par2a2">P22</div>
+                                            <div class="res-data" id="p5s1p1a2">6</div>
+                                            <div class="res-data" id="p5s1p2a2">0</div>
+                                            <div class="res-data" id="p5s2p1a2">7</div>
+                                            <div class="res-data" id="p5s2p2a2">6</div>
+                                            <div class="res-data" id="p5s3p1a2">0</div>
+                                            <div class="res-data" id="p5s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G6">
+                                            <div class="res-data res-ok" id="p6paIda2">P6</div>
+                                            <div class="res-data" id="p6par1a2">P06</div>
+                                            <div class="res-data" id="p6par2a2">P10</div>
+                                            <div class="res-data" id="p6s1p1a2">0</div>
+                                            <div class="res-data" id="p6s1p2a2">0</div>
+                                            <div class="res-data" id="p6s2p1a2">0</div>
+                                            <div class="res-data" id="p6s2p2a2">0</div>
+                                            <div class="res-data" id="p6s3p1a2">0</div>
+                                            <div class="res-data" id="p6s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G7">
+                                            <div class="res-data res-ok" id="p7paIda2">P7</div>
+                                            <div class="res-data" id="p7par1a2">P06</div>
+                                            <div class="res-data" id="p7par2a2">P14</div>
+                                            <div class="res-data" id="p7s1p1a2">0</div>
+                                            <div class="res-data" id="p7s1p2a2">0</div>
+                                            <div class="res-data" id="p7s2p1a2">0</div>
+                                            <div class="res-data" id="p7s2p2a2">0</div>
+                                            <div class="res-data" id="p7s3p1a2">0</div>
+                                            <div class="res-data" id="p7s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G8">
+                                            <div class="res-data res-ok" id="p8paIda2">P8</div>
+                                            <div class="res-data" id="p8par1a2">P06</div>
+                                            <div class="res-data" id="p8par2a2">P18</div>
+                                            <div class="res-data" id="p8s1p1a2">0</div>
+                                            <div class="res-data" id="p8s1p2a2">0</div>
+                                            <div class="res-data" id="p8s2p1a2">0</div>
+                                            <div class="res-data" id="p8s2p2a2">0</div>
+                                            <div class="res-data" id="p8s3p1a2">0</div>
+                                            <div class="res-data" id="p8s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G9">
+                                            <div class="res-data res-ok" id="p9paIda2">P9</div>
+                                            <div class="res-data" id="p9par1a2">P06</div>
+                                            <div class="res-data" id="p9par2a2">P22</div>
+                                            <div class="res-data" id="p9s1p1a2">6</div>
+                                            <div class="res-data" id="p9s1p2a2">0</div>
+                                            <div class="res-data" id="p9s2p1a2">6</div>
+                                            <div class="res-data" id="p9s2p2a2">1</div>
+                                            <div class="res-data" id="p9s3p1a2">0</div>
+                                            <div class="res-data" id="p9s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G10">
+                                            <div class="res-data res-ok" id="p10paIda2">P10</div>
+                                            <div class="res-data" id="p10par1a2">P10</div>
+                                            <div class="res-data" id="p10par2a2">P14</div>
+                                            <div class="res-data" id="p10s1p1a2">0</div>
+                                            <div class="res-data" id="p10s1p2a2">0</div>
+                                            <div class="res-data" id="p10s2p1a2">0</div>
+                                            <div class="res-data" id="p10s2p2a2">0</div>
+                                            <div class="res-data" id="p10s3p1a2">0</div>
+                                            <div class="res-data" id="p10s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G11">
+                                            <div class="res-data res-ok" id="p11paIda2">P11</div>
+                                            <div class="res-data" id="p11par1a2">P10</div>
+                                            <div class="res-data" id="p11par2a2">P18</div>
+                                            <div class="res-data" id="p11s1p1a2">0</div>
+                                            <div class="res-data" id="p11s1p2a2">0</div>
+                                            <div class="res-data" id="p11s2p1a2">0</div>
+                                            <div class="res-data" id="p11s2p2a2">0</div>
+                                            <div class="res-data" id="p11s3p1a2">0</div>
+                                            <div class="res-data" id="p11s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G12">
+                                            <div class="res-data res-ok" id="p12paIda2">P12</div>
+                                            <div class="res-data" id="p12par1a2">P10</div>
+                                            <div class="res-data" id="p12par2a2">P22</div>
+                                            <div class="res-data" id="p12s1p1a2">0</div>
+                                            <div class="res-data" id="p12s1p2a2">0</div>
+                                            <div class="res-data" id="p12s2p1a2">0</div>
+                                            <div class="res-data" id="p12s2p2a2">0</div>
+                                            <div class="res-data" id="p12s3p1a2">0</div>
+                                            <div class="res-data" id="p12s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G13">
+                                            <div class="res-data res-ok" id="p13paIda2">P13</div>
+                                            <div class="res-data" id="p13par1a2">P14</div>
+                                            <div class="res-data" id="p13par2a2">P18</div>
+                                            <div class="res-data" id="p13s1p1a2">0</div>
+                                            <div class="res-data" id="p13s1p2a2">0</div>
+                                            <div class="res-data" id="p13s2p1a2">0</div>
+                                            <div class="res-data" id="p13s2p2a2">0</div>
+                                            <div class="res-data" id="p13s3p1a2">0</div>
+                                            <div class="res-data" id="p13s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G14">
+                                            <div class="res-data res-ok" id="p14paIda2">P14</div>
+                                            <div class="res-data" id="p14par1a2">P14</div>
+                                            <div class="res-data" id="p14par2a2">P22</div>
+                                            <div class="res-data" id="p14s1p1a2">0</div>
+                                            <div class="res-data" id="p14s1p2a2">0</div>
+                                            <div class="res-data" id="p14s2p1a2">0</div>
+                                            <div class="res-data" id="p14s2p2a2">0</div>
+                                            <div class="res-data" id="p14s3p1a2">0</div>
+                                            <div class="res-data" id="p14s3p2a2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA2G15">
+                                            <div class="res-data res-ok" id="p15paIda2">P15</div>
+                                            <div class="res-data" id="p15par1a2">P18</div>
+                                            <div class="res-data" id="p15par2a2">P22</div>
+                                            <div class="res-data" id="p15s1p1a2">0</div>
+                                            <div class="res-data" id="p15s1p2a2">0</div>
+                                            <div class="res-data" id="p15s2p1a2">0</div>
+                                            <div class="res-data" id="p15s2p2a2">0</div>
+                                            <div class="res-data" id="p15s3p1a2">0</div>
+                                            <div class="res-data" id="p15s3p2a2">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="ra3" class="tabcontent2 resA3">
+                                        <div class="partidoJ" id="pSubA3G1">
+                                            <div class="res-data res-ok" id="p1paIda3">P1</div>
+                                            <div class="res-data" id="p1par1a3">P03</div>
+                                            <div class="res-data" id="p1par2a3">P07</div>
+                                            <div class="res-data" id="p1s1p1a3">0</div>
+                                            <div class="res-data" id="p1s1p2a3">0</div>
+                                            <div class="res-data" id="p1s2p1a3">0</div>
+                                            <div class="res-data" id="p1s2p2a3">0</div>
+                                            <div class="res-data" id="p1s3p1a3">0</div>
+                                            <div class="res-data" id="p1s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G2">
+                                            <div class="res-data res-ok" id="p2paIda3">P2</div>
+                                            <div class="res-data" id="p2par1a3">P03</div>
+                                            <div class="res-data" id="p2par2a3">P11</div>
+                                            <div class="res-data" id="p2s1p1a3">0</div>
+                                            <div class="res-data" id="p2s1p2a3">0</div>
+                                            <div class="res-data" id="p2s2p1a3">0</div>
+                                            <div class="res-data" id="p2s2p2a3">0</div>
+                                            <div class="res-data" id="p2s3p1a3">0</div>
+                                            <div class="res-data" id="p2s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G3">
+                                            <div class="res-data res-ok" id="p3paIda3">P3</div>
+                                            <div class="res-data" id="p3par1a3">P03</div>
+                                            <div class="res-data" id="p3par2a3">P15</div>
+                                            <div class="res-data" id="p3s1p1a3">0</div>
+                                            <div class="res-data" id="p3s1p2a3">0</div>
+                                            <div class="res-data" id="p3s2p1a3">0</div>
+                                            <div class="res-data" id="p3s2p2a3">0</div>
+                                            <div class="res-data" id="p3s3p1a3">0</div>
+                                            <div class="res-data" id="p3s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G4">
+                                            <div class="res-data res-ok" id="p4paIda3">P4</div>
+                                            <div class="res-data" id="p4par1a3">P03</div>
+                                            <div class="res-data" id="p4par2a3">P19</div>
+                                            <div class="res-data" id="p4s1p1a3">0</div>
+                                            <div class="res-data" id="p4s1p2a3">0</div>
+                                            <div class="res-data" id="p4s2p1a3">0</div>
+                                            <div class="res-data" id="p4s2p2a3">0</div>
+                                            <div class="res-data" id="p4s3p1a3">0</div>
+                                            <div class="res-data" id="p4s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G5">
+                                            <div class="res-data res-ok" id="p5paIda3">P5</div>
+                                            <div class="res-data" id="p5par1a3">P07</div>
+                                            <div class="res-data" id="p5par2a3">P11</div>
+                                            <div class="res-data" id="p5s1p1a3">6</div>
+                                            <div class="res-data" id="p5s1p2a3">1</div>
+                                            <div class="res-data" id="p5s2p1a3">6</div>
+                                            <div class="res-data" id="p5s2p2a3">1</div>
+                                            <div class="res-data" id="p5s3p1a3">0</div>
+                                            <div class="res-data" id="p5s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G6">
+                                            <div class="res-data res-ok" id="p6paIda3">P6</div>
+                                            <div class="res-data" id="p6par1a3">P07</div>
+                                            <div class="res-data" id="p6par2a3">P15</div>
+                                            <div class="res-data" id="p6s1p1a3">0</div>
+                                            <div class="res-data" id="p6s1p2a3">0</div>
+                                            <div class="res-data" id="p6s2p1a3">0</div>
+                                            <div class="res-data" id="p6s2p2a3">0</div>
+                                            <div class="res-data" id="p6s3p1a3">0</div>
+                                            <div class="res-data" id="p6s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G7">
+                                            <div class="res-data res-ok" id="p7paIda3">P7</div>
+                                            <div class="res-data" id="p7par1a3">P07</div>
+                                            <div class="res-data" id="p7par2a3">P19</div>
+                                            <div class="res-data" id="p7s1p1a3">0</div>
+                                            <div class="res-data" id="p7s1p2a3">0</div>
+                                            <div class="res-data" id="p7s2p1a3">0</div>
+                                            <div class="res-data" id="p7s2p2a3">0</div>
+                                            <div class="res-data" id="p7s3p1a3">0</div>
+                                            <div class="res-data" id="p7s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G8">
+                                            <div class="res-data res-ok" id="p8paIda3">P8</div>
+                                            <div class="res-data" id="p8par1a3">P11</div>
+                                            <div class="res-data" id="p8par2a3">P15</div>
+                                            <div class="res-data" id="p8s1p1a3">6</div>
+                                            <div class="res-data" id="p8s1p2a3">4</div>
+                                            <div class="res-data" id="p8s2p1a3">7</div>
+                                            <div class="res-data" id="p8s2p2a3">5</div>
+                                            <div class="res-data" id="p8s3p1a3">0</div>
+                                            <div class="res-data" id="p8s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G9">
+                                            <div class="res-data res-ok" id="p9paIda3">P9</div>
+                                            <div class="res-data" id="p9par1a3">P11</div>
+                                            <div class="res-data" id="p9par2a3">P19</div>
+                                            <div class="res-data" id="p9s1p1a3">6</div>
+                                            <div class="res-data" id="p9s1p2a3">3</div>
+                                            <div class="res-data" id="p9s2p1a3">6</div>
+                                            <div class="res-data" id="p9s2p2a3">0</div>
+                                            <div class="res-data" id="p9s3p1a3">0</div>
+                                            <div class="res-data" id="p9s3p2a3">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA3G10">
+                                            <div class="res-data res-ok" id="p10paIda3">P10</div>
+                                            <div class="res-data" id="p10par1a3">P15</div>
+                                            <div class="res-data" id="p10par2a3">P19</div>
+                                            <div class="res-data" id="p10s1p1a3">0</div>
+                                            <div class="res-data" id="p10s1p2a3">0</div>
+                                            <div class="res-data" id="p10s2p1a3">0</div>
+                                            <div class="res-data" id="p10s2p2a3">0</div>
+                                            <div class="res-data" id="p10s3p1a3">0</div>
+                                            <div class="res-data" id="p10s3p2a3">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="ra4" class="tabcontent2 resA4">
+                                        <div class="partidoJ" id="pSubA4G1">
+                                            <div class="res-data res-ok" id="p1paIda4">P1</div>
+                                            <div class="res-data" id="p1par1a4">P04</div>
+                                            <div class="res-data" id="p1par2a4">P08</div>
+                                            <div class="res-data" id="p1s1p1a4">0</div>
+                                            <div class="res-data" id="p1s1p2a4">0</div>
+                                            <div class="res-data" id="p1s2p1a4">0</div>
+                                            <div class="res-data" id="p1s2p2a4">0</div>
+                                            <div class="res-data" id="p1s3p1a4">0</div>
+                                            <div class="res-data" id="p1s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G2">
+                                            <div class="res-data res-ok" id="p2paIda4">P2</div>
+                                            <div class="res-data" id="p2par1a4">P04</div>
+                                            <div class="res-data" id="p2par2a4">P12</div>
+                                            <div class="res-data" id="p2s1p1a4">0</div>
+                                            <div class="res-data" id="p2s1p2a4">0</div>
+                                            <div class="res-data" id="p2s2p1a4">0</div>
+                                            <div class="res-data" id="p2s2p2a4">0</div>
+                                            <div class="res-data" id="p2s3p1a4">0</div>
+                                            <div class="res-data" id="p2s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G3">
+                                            <div class="res-data res-ok" id="p3paIda4">P3</div>
+                                            <div class="res-data" id="p3par1a4">P04</div>
+                                            <div class="res-data" id="p3par2a4">P16</div>
+                                            <div class="res-data" id="p3s1p1a4">6</div>
+                                            <div class="res-data" id="p3s1p2a4">1</div>
+                                            <div class="res-data" id="p3s2p1a4">6</div>
+                                            <div class="res-data" id="p3s2p2a4">1</div>
+                                            <div class="res-data" id="p3s3p1a4">0</div>
+                                            <div class="res-data" id="p3s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G4">
+                                            <div class="res-data res-ok" id="p4paIda4">P4</div>
+                                            <div class="res-data" id="p4par1a4">P04</div>
+                                            <div class="res-data" id="p4par2a4">P20</div>
+                                            <div class="res-data" id="p4s1p1a4">0</div>
+                                            <div class="res-data" id="p4s1p2a4">0</div>
+                                            <div class="res-data" id="p4s2p1a4">0</div>
+                                            <div class="res-data" id="p4s2p2a4">0</div>
+                                            <div class="res-data" id="p4s3p1a4">0</div>
+                                            <div class="res-data" id="p4s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G5">
+                                            <div class="res-data res-ok" id="p5paIda4">P5</div>
+                                            <div class="res-data" id="p5par1a4">P08</div>
+                                            <div class="res-data" id="p5par2a4">P12</div>
+                                            <div class="res-data" id="p5s1p1a4">6</div>
+                                            <div class="res-data" id="p5s1p2a4">1</div>
+                                            <div class="res-data" id="p5s2p1a4">6</div>
+                                            <div class="res-data" id="p5s2p2a4">2</div>
+                                            <div class="res-data" id="p5s3p1a4">0</div>
+                                            <div class="res-data" id="p5s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G6">
+                                            <div class="res-data res-ok" id="p6paIda4">P6</div>
+                                            <div class="res-data" id="p6par1a4">P08</div>
+                                            <div class="res-data" id="p6par2a4">P16</div>
+                                            <div class="res-data" id="p6s1p1a4">6</div>
+                                            <div class="res-data" id="p6s1p2a4">2</div>
+                                            <div class="res-data" id="p6s2p1a4">7</div>
+                                            <div class="res-data" id="p6s2p2a4">5</div>
+                                            <div class="res-data" id="p6s3p1a4">0</div>
+                                            <div class="res-data" id="p6s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G7">
+                                            <div class="res-data res-ok" id="p7paIda4">P7</div>
+                                            <div class="res-data" id="p7par1a4">P08</div>
+                                            <div class="res-data" id="p7par2a4">P20</div>
+                                            <div class="res-data" id="p7s1p1a4">0</div>
+                                            <div class="res-data" id="p7s1p2a4">0</div>
+                                            <div class="res-data" id="p7s2p1a4">0</div>
+                                            <div class="res-data" id="p7s2p2a4">0</div>
+                                            <div class="res-data" id="p7s3p1a4">0</div>
+                                            <div class="res-data" id="p7s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G8">
+                                            <div class="res-data res-ok" id="p8paIda4">P8</div>
+                                            <div class="res-data" id="p8par1a4">P12</div>
+                                            <div class="res-data" id="p8par2a4">P16</div>
+                                            <div class="res-data" id="p8s1p1a4">0</div>
+                                            <div class="res-data" id="p8s1p2a4">0</div>
+                                            <div class="res-data" id="p8s2p1a4">0</div>
+                                            <div class="res-data" id="p8s2p2a4">0</div>
+                                            <div class="res-data" id="p8s3p1a4">0</div>
+                                            <div class="res-data" id="p8s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G9">
+                                            <div class="res-data res-ok" id="p9paIda4">P9</div>
+                                            <div class="res-data" id="p9par1a4">P12</div>
+                                            <div class="res-data" id="p9par2a4">P20</div>
+                                            <div class="res-data" id="p9s1p1a4">0</div>
+                                            <div class="res-data" id="p9s1p2a4">0</div>
+                                            <div class="res-data" id="p9s2p1a4">0</div>
+                                            <div class="res-data" id="p9s2p2a4">0</div>
+                                            <div class="res-data" id="p9s3p1a4">0</div>
+                                            <div class="res-data" id="p9s3p2a4">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubA4G10">
+                                            <div class="res-data res-ok" id="p10paIda4">P10</div>
+                                            <div class="res-data" id="p10par1a4">P16</div>
+                                            <div class="res-data" id="p10par2a4">P20</div>
+                                            <div class="res-data" id="p10s1p1a4">0</div>
+                                            <div class="res-data" id="p10s1p2a4">0</div>
+                                            <div class="res-data" id="p10s2p1a4">0</div>
+                                            <div class="res-data" id="p10s2p2a4">0</div>
+                                            <div class="res-data" id="p10s3p1a4">0</div>
+                                            <div class="res-data" id="p10s3p2a4">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="rb1" class="tabcontent2 resB1">
+                                        <div class="partidoJ" id="pSubB1G1">
+                                            <div class="res-data res-ok" id="p1paIdb1">P1</div>
+                                            <div class="res-data" id="p1par1b1">P01</div>
+                                            <div class="res-data" id="p1par2b1">P05</div>
+                                            <div class="res-data" id="p1s1p1b1">0</div>
+                                            <div class="res-data" id="p1s1p2b1">0</div>
+                                            <div class="res-data" id="p1s2p1b1">0</div>
+                                            <div class="res-data" id="p1s2p2b1">0</div>
+                                            <div class="res-data" id="p1s3p1b1">0</div>
+                                            <div class="res-data" id="p1s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G2">
+                                            <div class="res-data res-ok" id="p2paIdb1">P2</div>
+                                            <div class="res-data" id="p2par1b1">P01</div>
+                                            <div class="res-data" id="p2par2b1">P09</div>
+                                            <div class="res-data" id="p2s1p1b1">0</div>
+                                            <div class="res-data" id="p2s1p2b1">0</div>
+                                            <div class="res-data" id="p2s2p1b1">0</div>
+                                            <div class="res-data" id="p2s2p2b1">0</div>
+                                            <div class="res-data" id="p2s3p1b1">0</div>
+                                            <div class="res-data" id="p2s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G3">
+                                            <div class="res-data res-ok" id="p3paIdb1">P3</div>
+                                            <div class="res-data" id="p3par1b1">P01</div>
+                                            <div class="res-data" id="p3par2b1">P13</div>
+                                            <div class="res-data" id="p3s1p1b1">0</div>
+                                            <div class="res-data" id="p3s1p2b1">0</div>
+                                            <div class="res-data" id="p3s2p1b1">0</div>
+                                            <div class="res-data" id="p3s2p2b1">0</div>
+                                            <div class="res-data" id="p3s3p1b1">0</div>
+                                            <div class="res-data" id="p3s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G4">
+                                            <div class="res-data res-ok" id="p4paIdb1">P4</div>
+                                            <div class="res-data" id="p4par1b1">P01</div>
+                                            <div class="res-data" id="p4par2b1">P17</div>
+                                            <div class="res-data" id="p4s1p1b1">0</div>
+                                            <div class="res-data" id="p4s1p2b1">0</div>
+                                            <div class="res-data" id="p4s2p1b1">0</div>
+                                            <div class="res-data" id="p4s2p2b1">0</div>
+                                            <div class="res-data" id="p4s3p1b1">0</div>
+                                            <div class="res-data" id="p4s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G5">
+                                            <div class="res-data res-ok" id="p5paIdb1">P5</div>
+                                            <div class="res-data" id="p5par1b1">P01</div>
+                                            <div class="res-data" id="p5par2b1">P21</div>
+                                            <div class="res-data" id="p5s1p1b1">0</div>
+                                            <div class="res-data" id="p5s1p2b1">0</div>
+                                            <div class="res-data" id="p5s2p1b1">0</div>
+                                            <div class="res-data" id="p5s2p2b1">0</div>
+                                            <div class="res-data" id="p5s3p1b1">0</div>
+                                            <div class="res-data" id="p5s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G6">
+                                            <div class="res-data res-ok" id="p6paIdb1">P6</div>
+                                            <div class="res-data" id="p6par1b1">P05</div>
+                                            <div class="res-data" id="p6par2b1">P09</div>
+                                            <div class="res-data" id="p6s1p1b1">0</div>
+                                            <div class="res-data" id="p6s1p2b1">0</div>
+                                            <div class="res-data" id="p6s2p1b1">0</div>
+                                            <div class="res-data" id="p6s2p2b1">0</div>
+                                            <div class="res-data" id="p6s3p1b1">0</div>
+                                            <div class="res-data" id="p6s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G7">
+                                            <div class="res-data res-ok" id="p7paIdb1">P7</div>
+                                            <div class="res-data" id="p7par1b1">P05</div>
+                                            <div class="res-data" id="p7par2b1">P13</div>
+                                            <div class="res-data" id="p7s1p1b1">0</div>
+                                            <div class="res-data" id="p7s1p2b1">0</div>
+                                            <div class="res-data" id="p7s2p1b1">0</div>
+                                            <div class="res-data" id="p7s2p2b1">0</div>
+                                            <div class="res-data" id="p7s3p1b1">0</div>
+                                            <div class="res-data" id="p7s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G8">
+                                            <div class="res-data res-ok" id="p8paIdb1">P8</div>
+                                            <div class="res-data" id="p8par1b1">P05</div>
+                                            <div class="res-data" id="p8par2b1">P17</div>
+                                            <div class="res-data" id="p8s1p1b1">0</div>
+                                            <div class="res-data" id="p8s1p2b1">0</div>
+                                            <div class="res-data" id="p8s2p1b1">0</div>
+                                            <div class="res-data" id="p8s2p2b1">0</div>
+                                            <div class="res-data" id="p8s3p1b1">0</div>
+                                            <div class="res-data" id="p8s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G9">
+                                            <div class="res-data res-ok" id="p9paIdb1">P9</div>
+                                            <div class="res-data" id="p9par1b1">P05</div>
+                                            <div class="res-data" id="p9par2b1">P21</div>
+                                            <div class="res-data" id="p9s1p1b1">1</div>
+                                            <div class="res-data" id="p9s1p2b1">6</div>
+                                            <div class="res-data" id="p9s2p1b1">5</div>
+                                            <div class="res-data" id="p9s2p2b1">7</div>
+                                            <div class="res-data" id="p9s3p1b1">0</div>
+                                            <div class="res-data" id="p9s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G10">
+                                            <div class="res-data res-ok" id="p10paIdb1">P10</div>
+                                            <div class="res-data" id="p10par1b1">P09</div>
+                                            <div class="res-data" id="p10par2b1">P13</div>
+                                            <div class="res-data" id="p10s1p1b1">0</div>
+                                            <div class="res-data" id="p10s1p2b1">0</div>
+                                            <div class="res-data" id="p10s2p1b1">0</div>
+                                            <div class="res-data" id="p10s2p2b1">0</div>
+                                            <div class="res-data" id="p10s3p1b1">0</div>
+                                            <div class="res-data" id="p10s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G11">
+                                            <div class="res-data res-ok" id="p11paIdb1">P11</div>
+                                            <div class="res-data" id="p11par1b1">P09</div>
+                                            <div class="res-data" id="p11par2b1">P17</div>
+                                            <div class="res-data" id="p11s1p1b1">0</div>
+                                            <div class="res-data" id="p11s1p2b1">0</div>
+                                            <div class="res-data" id="p11s2p1b1">0</div>
+                                            <div class="res-data" id="p11s2p2b1">0</div>
+                                            <div class="res-data" id="p11s3p1b1">0</div>
+                                            <div class="res-data" id="p11s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G12">
+                                            <div class="res-data res-ok" id="p12paIdb1">P12</div>
+                                            <div class="res-data" id="p12par1b1">P09</div>
+                                            <div class="res-data" id="p12par2b1">P21</div>
+                                            <div class="res-data" id="p12s1p1b1">0</div>
+                                            <div class="res-data" id="p12s1p2b1">0</div>
+                                            <div class="res-data" id="p12s2p1b1">0</div>
+                                            <div class="res-data" id="p12s2p2b1">0</div>
+                                            <div class="res-data" id="p12s3p1b1">0</div>
+                                            <div class="res-data" id="p12s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G13">
+                                            <div class="res-data res-ok" id="p13paIdb1">P13</div>
+                                            <div class="res-data" id="p13par1b1">P13</div>
+                                            <div class="res-data" id="p13par2b1">P17</div>
+                                            <div class="res-data" id="p13s1p1b1">0</div>
+                                            <div class="res-data" id="p13s1p2b1">0</div>
+                                            <div class="res-data" id="p13s2p1b1">0</div>
+                                            <div class="res-data" id="p13s2p2b1">0</div>
+                                            <div class="res-data" id="p13s3p1b1">0</div>
+                                            <div class="res-data" id="p13s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G14">
+                                            <div class="res-data res-ok" id="p14paIdb1">P14</div>
+                                            <div class="res-data" id="p14par1b1">P13</div>
+                                            <div class="res-data" id="p14par2b1">P21</div>
+                                            <div class="res-data" id="p14s1p1b1">0</div>
+                                            <div class="res-data" id="p14s1p2b1">0</div>
+                                            <div class="res-data" id="p14s2p1b1">0</div>
+                                            <div class="res-data" id="p14s2p2b1">0</div>
+                                            <div class="res-data" id="p14s3p1b1">0</div>
+                                            <div class="res-data" id="p14s3p2b1">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB1G15">
+                                            <div class="res-data res-ok" id="p15paIdb1">P15</div>
+                                            <div class="res-data" id="p15par1b1">P17</div>
+                                            <div class="res-data" id="p15par2b1">P21</div>
+                                            <div class="res-data" id="p15s1p1b1">0</div>
+                                            <div class="res-data" id="p15s1p2b1">0</div>
+                                            <div class="res-data" id="p15s2p1b1">0</div>
+                                            <div class="res-data" id="p15s2p2b1">0</div>
+                                            <div class="res-data" id="p15s3p1b1">0</div>
+                                            <div class="res-data" id="p15s3p2b1">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="rb2" class="tabcontent2 resB2">
+                                        <div class="partidoJ" id="pSubB2G1">
+                                            <div class="res-data res-ok" id="p1paIdb2">P1</div>
+                                            <div class="res-data" id="p1par1b2">P02</div>
+                                            <div class="res-data" id="p1par2b2">P06</div>
+                                            <div class="res-data" id="p1s1p1b2">0</div>
+                                            <div class="res-data" id="p1s1p2b2">0</div>
+                                            <div class="res-data" id="p1s2p1b2">0</div>
+                                            <div class="res-data" id="p1s2p2b2">0</div>
+                                            <div class="res-data" id="p1s3p1b2">0</div>
+                                            <div class="res-data" id="p1s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G2">
+                                            <div class="res-data res-ok" id="p2paIdb2">P2</div>
+                                            <div class="res-data" id="p2par1b2">P02</div>
+                                            <div class="res-data" id="p2par2b2">P10</div>
+                                            <div class="res-data" id="p2s1p1b2">3</div>
+                                            <div class="res-data" id="p2s1p2b2">6</div>
+                                            <div class="res-data" id="p2s2p1b2">3</div>
+                                            <div class="res-data" id="p2s2p2b2">6</div>
+                                            <div class="res-data" id="p2s3p1b2">0</div>
+                                            <div class="res-data" id="p2s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G3">
+                                            <div class="res-data res-ok" id="p3paIdb2">P3</div>
+                                            <div class="res-data" id="p3par1b2">P02</div>
+                                            <div class="res-data" id="p3par2b2">P14</div>
+                                            <div class="res-data" id="p3s1p1b2">0</div>
+                                            <div class="res-data" id="p3s1p2b2">0</div>
+                                            <div class="res-data" id="p3s2p1b2">0</div>
+                                            <div class="res-data" id="p3s2p2b2">0</div>
+                                            <div class="res-data" id="p3s3p1b2">0</div>
+                                            <div class="res-data" id="p3s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G4">
+                                            <div class="res-data res-ok" id="p4paIdb2">P4</div>
+                                            <div class="res-data" id="p4par1b2">P02</div>
+                                            <div class="res-data" id="p4par2b2">P18</div>
+                                            <div class="res-data" id="p4s1p1b2">0</div>
+                                            <div class="res-data" id="p4s1p2b2">0</div>
+                                            <div class="res-data" id="p4s2p1b2">0</div>
+                                            <div class="res-data" id="p4s2p2b2">0</div>
+                                            <div class="res-data" id="p4s3p1b2">0</div>
+                                            <div class="res-data" id="p4s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G5">
+                                            <div class="res-data res-ok" id="p5paIdb2">P5</div>
+                                            <div class="res-data" id="p5par1b2">P02</div>
+                                            <div class="res-data" id="p5par2b2">P22</div>
+                                            <div class="res-data" id="p5s1p1b2">0</div>
+                                            <div class="res-data" id="p5s1p2b2">0</div>
+                                            <div class="res-data" id="p5s2p1b2">0</div>
+                                            <div class="res-data" id="p5s2p2b2">0</div>
+                                            <div class="res-data" id="p5s3p1b2">0</div>
+                                            <div class="res-data" id="p5s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G6">
+                                            <div class="res-data res-ok" id="p6paIdb2">P6</div>
+                                            <div class="res-data" id="p6par1b2">P06</div>
+                                            <div class="res-data" id="p6par2b2">P10</div>
+                                            <div class="res-data" id="p6s1p1b2">0</div>
+                                            <div class="res-data" id="p6s1p2b2">0</div>
+                                            <div class="res-data" id="p6s2p1b2">0</div>
+                                            <div class="res-data" id="p6s2p2b2">0</div>
+                                            <div class="res-data" id="p6s3p1b2">0</div>
+                                            <div class="res-data" id="p6s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G7">
+                                            <div class="res-data res-ok" id="p7paIdb2">P7</div>
+                                            <div class="res-data" id="p7par1b2">P06</div>
+                                            <div class="res-data" id="p7par2b2">P14</div>
+                                            <div class="res-data" id="p7s1p1b2">0</div>
+                                            <div class="res-data" id="p7s1p2b2">0</div>
+                                            <div class="res-data" id="p7s2p1b2">0</div>
+                                            <div class="res-data" id="p7s2p2b2">0</div>
+                                            <div class="res-data" id="p7s3p1b2">0</div>
+                                            <div class="res-data" id="p7s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G8">
+                                            <div class="res-data res-ok" id="p8paIdb2">P8</div>
+                                            <div class="res-data" id="p8par1b2">P06</div>
+                                            <div class="res-data" id="p8par2b2">P18</div>
+                                            <div class="res-data" id="p8s1p1b2">0</div>
+                                            <div class="res-data" id="p8s1p2b2">0</div>
+                                            <div class="res-data" id="p8s2p1b2">0</div>
+                                            <div class="res-data" id="p8s2p2b2">0</div>
+                                            <div class="res-data" id="p8s3p1b2">0</div>
+                                            <div class="res-data" id="p8s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G9">
+                                            <div class="res-data res-ok" id="p9paIdb2">P9</div>
+                                            <div class="res-data" id="p9par1b2">P06</div>
+                                            <div class="res-data" id="p9par2b2">P22</div>
+                                            <div class="res-data" id="p9s1p1b2">0</div>
+                                            <div class="res-data" id="p9s1p2b2">0</div>
+                                            <div class="res-data" id="p9s2p1b2">0</div>
+                                            <div class="res-data" id="p9s2p2b2">0</div>
+                                            <div class="res-data" id="p9s3p1b2">0</div>
+                                            <div class="res-data" id="p9s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G10">
+                                            <div class="res-data res-ok" id="p10paIdb2">P10</div>
+                                            <div class="res-data" id="p10par1b2">P10</div>
+                                            <div class="res-data" id="p10par2b2">P14</div>
+                                            <div class="res-data" id="p10s1p1b2">6</div>
+                                            <div class="res-data" id="p10s1p2b2">4</div>
+                                            <div class="res-data" id="p10s2p1b2">3</div>
+                                            <div class="res-data" id="p10s2p2b2">6</div>
+                                            <div class="res-data" id="p10s3p1b2">6</div>
+                                            <div class="res-data" id="p10s3p2b2">4</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G11">
+                                            <div class="res-data res-ok" id="p11paIdb2">P11</div>
+                                            <div class="res-data" id="p11par1b2">P10</div>
+                                            <div class="res-data" id="p11par2b2">P18</div>
+                                            <div class="res-data" id="p11s1p1b2">0</div>
+                                            <div class="res-data" id="p11s1p2b2">0</div>
+                                            <div class="res-data" id="p11s2p1b2">0</div>
+                                            <div class="res-data" id="p11s2p2b2">0</div>
+                                            <div class="res-data" id="p11s3p1b2">0</div>
+                                            <div class="res-data" id="p11s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G12">
+                                            <div class="res-data res-ok" id="p12paIdb2">P12</div>
+                                            <div class="res-data" id="p12par1b2">P10</div>
+                                            <div class="res-data" id="p12par2b2">P22</div>
+                                            <div class="res-data" id="p12s1p1b2">0</div>
+                                            <div class="res-data" id="p12s1p2b2">0</div>
+                                            <div class="res-data" id="p12s2p1b2">0</div>
+                                            <div class="res-data" id="p12s2p2b2">0</div>
+                                            <div class="res-data" id="p12s3p1b2">0</div>
+                                            <div class="res-data" id="p12s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G13">
+                                            <div class="res-data res-ok" id="p13paIdb2">P13</div>
+                                            <div class="res-data" id="p13par1b2">P14</div>
+                                            <div class="res-data" id="p13par2b2">P18</div>
+                                            <div class="res-data" id="p13s1p1b2">0</div>
+                                            <div class="res-data" id="p13s1p2b2">0</div>
+                                            <div class="res-data" id="p13s2p1b2">0</div>
+                                            <div class="res-data" id="p13s2p2b2">0</div>
+                                            <div class="res-data" id="p13s3p1b2">0</div>
+                                            <div class="res-data" id="p13s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G14">
+                                            <div class="res-data res-ok" id="p14paIdb2">P14</div>
+                                            <div class="res-data" id="p14par1b2">P14</div>
+                                            <div class="res-data" id="p14par2b2">P22</div>
+                                            <div class="res-data" id="p14s1p1b2">3</div>
+                                            <div class="res-data" id="p14s1p2b2">6</div>
+                                            <div class="res-data" id="p14s2p1b2">1</div>
+                                            <div class="res-data" id="p14s2p2b2">6</div>
+                                            <div class="res-data" id="p14s3p1b2">0</div>
+                                            <div class="res-data" id="p14s3p2b2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="pSubB2G15">
+                                            <div class="res-data res-ok" id="p15paIdb2">P15</div>
+                                            <div class="res-data" id="p15par1b2">P18</div>
+                                            <div class="res-data" id="p15par2b2">P22</div>
+                                            <div class="res-data" id="p15s1p1b2">0</div>
+                                            <div class="res-data" id="p15s1p2b2">0</div>
+                                            <div class="res-data" id="p15s2p1b2">0</div>
+                                            <div class="res-data" id="p15s2p2b2">0</div>
+                                            <div class="res-data" id="p15s3p1b2">0</div>
+                                            <div class="res-data" id="p15s3p2b2">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Posiciones" class="tabcontent">
+                                <div class="posic-div">
+                                    <div class="tab">
+                                        <button class="tablinks4" onclick="openPest4(event, 'posa1')" id="defaultOpen4">A</button>
+                                        <button class="tablinks4" onclick="openPest4(event, 'posa2')">B</button>
+                                        <button class="tablinks4" onclick="openPest4(event, 'posa3')">C</button>
+                                        <button class="tablinks4" onclick="openPest4(event, 'posa4')">D</button>
+                                        <button class="tablinks4" onclick="openPest4(event, 'posb1')">E</button>
+                                        <button class="tablinks4" onclick="openPest4(event, 'posb2')">F</button>
+                                    </div>
+                                    <div id="posa1" class="tabcontent4">
+                                        <div class="pos-grupos6 posGruA1">
+                                            <div class="pos-data" id="pdGA1-title">Posiciones G-A</div>
+                                            <div class="pos-data" id="pdGA1-index1">N°</div>
+                                            <div class="pos-data" id="pdGA1-index2">ID</div>
+                                            <div class="pos-data" id="pdGA1-index3">PJ</div>
+                                            <div class="pos-data" id="pdGA1-index4">PG</div>
+                                            <div class="pos-data" id="pdGA1-index5">PP</div>
+                                            <div class="pos-data" id="pdGA1-index6">JF</div>
+                                            <div class="pos-data" id="pdGA1-index7">JC</div>
+                                            <div class="pos-data" id="pdGA1-index8">DJ</div>
+                                            <div class="pos-data" id="pdGA1-posic1">1</div>
+                                            <div class="pos-data" id="pdGA1-posic2">2</div>
+                                            <div class="pos-data" id="pdGA1-posic3">3</div>
+                                            <div class="pos-data" id="pdGA1-posic4">4</div>
+                                            <div class="pos-data" id="pdGA1-posic5">5</div>
+                                            <div class="pos-data" id="pdGA1-posic6">6</div>
+                                            <div class="pos-data" id="pdGA1-id1">P13</div>
+                                            <div class="pos-data" id="pdGA1-id2">P09</div>
+                                            <div class="pos-data" id="pdGA1-id3">P01</div>
+                                            <div class="pos-data" id="pdGA1-id4">P17</div>
+                                            <div class="pos-data" id="pdGA1-id5">P05</div>
+                                            <div class="pos-data" id="pdGA1-id6">P21</div>
+                                            <div class="pos-data" id="pdGA1-pj1">2</div>
+                                            <div class="pos-data" id="pdGA1-pj2">1</div>
+                                            <div class="pos-data" id="pdGA1-pj3">1</div>
+                                            <div class="pos-data" id="pdGA1-pj4">2</div>
+                                            <div class="pos-data" id="pdGA1-pj5">0</div>
+                                            <div class="pos-data" id="pdGA1-pj6">0</div>
+                                            <div class="pos-data" id="pdGA1-pg1">2</div>
+                                            <div class="pos-data" id="pdGA1-pg2">1</div>
+                                            <div class="pos-data" id="pdGA1-pg3">0</div>
+                                            <div class="pos-data" id="pdGA1-pg4">0</div>
+                                            <div class="pos-data" id="pdGA1-pg5">0</div>
+                                            <div class="pos-data" id="pdGA1-pg6">0</div>
+                                            <div class="pos-data" id="pdGA1-pp1">0</div>
+                                            <div class="pos-data" id="pdGA1-pp2">0</div>
+                                            <div class="pos-data" id="pdGA1-pp3">1</div>
+                                            <div class="pos-data" id="pdGA1-pp4">2</div>
+                                            <div class="pos-data" id="pdGA1-pp5">0</div>
+                                            <div class="pos-data" id="pdGA1-pp6">0</div>
+                                            <div class="pos-data" id="pdGA1-sf1">24</div>
+                                            <div class="pos-data" id="pdGA1-sf2">12</div>
+                                            <div class="pos-data" id="pdGA1-sf3">6</div>
+                                            <div class="pos-data" id="pdGA1-sf4">8</div>
+                                            <div class="pos-data" id="pdGA1-sf5">0</div>
+                                            <div class="pos-data" id="pdGA1-sf6">0</div>
+                                            <div class="pos-data" id="pdGA1-sc1">10</div>
+                                            <div class="pos-data" id="pdGA1-sc2">4</div>
+                                            <div class="pos-data" id="pdGA1-sc3">12</div>
+                                            <div class="pos-data" id="pdGA1-sc4">24</div>
+                                            <div class="pos-data" id="pdGA1-sc5">0</div>
+                                            <div class="pos-data" id="pdGA1-sc6">0</div>
+                                            <div class="pos-data" id="pdGA1-ds1">14</div>
+                                            <div class="pos-data" id="pdGA1-ds2">6</div>
+                                            <div class="pos-data" id="pdGA1-ds3">-6</div>
+                                            <div class="pos-data" id="pdGA1-ds4">-16</div>
+                                            <div class="pos-data" id="pdGA1-ds5">0</div>
+                                            <div class="pos-data" id="pdGA1-ds6">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="posa2" class="tabcontent4">
+                                        <div class="pos-grupos6 posGruA2">
+                                            <div class="pos-data" id="pdGA2-title">Posiciones G-B</div>
+                                            <div class="pos-data" id="pdGA2-index1">N°</div>
+                                            <div class="pos-data" id="pdGA2-index2">ID</div>
+                                            <div class="pos-data" id="pdGA2-index3">PJ</div>
+                                            <div class="pos-data" id="pdGA2-index4">PG</div>
+                                            <div class="pos-data" id="pdGA2-index5">PP</div>
+                                            <div class="pos-data" id="pdGA2-index6">JF</div>
+                                            <div class="pos-data" id="pdGA2-index7">JC</div>
+                                            <div class="pos-data" id="pdGA2-index8">DJ</div>
+                                            <div class="pos-data" id="pdGA2-posic1">1</div>
+                                            <div class="pos-data" id="pdGA2-posic2">2</div>
+                                            <div class="pos-data" id="pdGA2-posic3">3</div>
+                                            <div class="pos-data" id="pdGA2-posic4">4</div>
+                                            <div class="pos-data" id="pdGA2-posic5">5</div>
+                                            <div class="pos-data" id="pdGA2-posic6">6</div>
+                                            <div class="pos-data" id="pdGA2-id1">P02</div>
+                                            <div class="pos-data" id="pdGA2-id2">P06</div>
+                                            <div class="pos-data" id="pdGA2-id3">P10</div>
+                                            <div class="pos-data" id="pdGA2-id4">P22</div>
+                                            <div class="pos-data" id="pdGA2-id5">P14</div>
+                                            <div class="pos-data" id="pdGA2-id6">P18</div>
+                                            <div class="pos-data" id="pdGA2-pj1">2</div>
+                                            <div class="pos-data" id="pdGA2-pj2">3</div>
+                                            <div class="pos-data" id="pdGA2-pj3">1</div>
+                                            <div class="pos-data" id="pdGA2-pj4">2</div>
+                                            <div class="pos-data" id="pdGA2-pj5">0</div>
+                                            <div class="pos-data" id="pdGA2-pj6">0</div>
+                                            <div class="pos-data" id="pdGA2-pg1">2</div>
+                                            <div class="pos-data" id="pdGA2-pg2">2</div>
+                                            <div class="pos-data" id="pdGA2-pg3">0</div>
+                                            <div class="pos-data" id="pdGA2-pg4">0</div>
+                                            <div class="pos-data" id="pdGA2-pg5">0</div>
+                                            <div class="pos-data" id="pdGA2-pg6">0</div>
+                                            <div class="pos-data" id="pdGA2-pp1">0</div>
+                                            <div class="pos-data" id="pdGA2-pp2">1</div>
+                                            <div class="pos-data" id="pdGA2-pp3">1</div>
+                                            <div class="pos-data" id="pdGA2-pp4">2</div>
+                                            <div class="pos-data" id="pdGA2-pp5">0</div>
+                                            <div class="pos-data" id="pdGA2-pp6">0</div>
+                                            <div class="pos-data" id="pdGA2-sf1">27</div>
+                                            <div class="pos-data" id="pdGA2-sf2">37</div>
+                                            <div class="pos-data" id="pdGA2-sf3">7</div>
+                                            <div class="pos-data" id="pdGA2-sf4">7</div>
+                                            <div class="pos-data" id="pdGA2-sf5">0</div>
+                                            <div class="pos-data" id="pdGA2-sf6">0</div>
+                                            <div class="pos-data" id="pdGA2-sc1">13</div>
+                                            <div class="pos-data" id="pdGA2-sc2">28</div>
+                                            <div class="pos-data" id="pdGA2-sc3">12</div>
+                                            <div class="pos-data" id="pdGA2-sc4">25</div>
+                                            <div class="pos-data" id="pdGA2-sc5">0</div>
+                                            <div class="pos-data" id="pdGA2-sc6">0</div>
+                                            <div class="pos-data" id="pdGA2-ds1">14</div>
+                                            <div class="pos-data" id="pdGA2-ds2">9</div>
+                                            <div class="pos-data" id="pdGA2-ds3">-5</div>
+                                            <div class="pos-data" id="pdGA2-ds4">-18</div>
+                                            <div class="pos-data" id="pdGA2-ds5">0</div>
+                                            <div class="pos-data" id="pdGA2-ds6">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="posa3" class="tabcontent4">
+                                        <div class="pos-grupos5 posGruA3">
+                                            <div class="pos-data" id="pdGA3-title">Posiciones G-C</div>
+                                            <div class="pos-data" id="pdGA3-index1">N°</div>
+                                            <div class="pos-data" id="pdGA3-index2">ID</div>
+                                            <div class="pos-data" id="pdGA3-index3">PJ</div>
+                                            <div class="pos-data" id="pdGA3-index4">PG</div>
+                                            <div class="pos-data" id="pdGA3-index5">PP</div>
+                                            <div class="pos-data" id="pdGA3-index6">JF</div>
+                                            <div class="pos-data" id="pdGA3-index7">JC</div>
+                                            <div class="pos-data" id="pdGA3-index8">DJ</div>
+                                            <div class="pos-data" id="pdGA3-posic1">1</div>
+                                            <div class="pos-data" id="pdGA3-posic2">2</div>
+                                            <div class="pos-data" id="pdGA3-posic3">3</div>
+                                            <div class="pos-data" id="pdGA3-posic4">4</div>
+                                            <div class="pos-data" id="pdGA3-posic5">5</div>
+                                            <div class="pos-data" id="pdGA3-id1">P11</div>
+                                            <div class="pos-data" id="pdGA3-id2">P07</div>
+                                            <div class="pos-data" id="pdGA3-id3">P15</div>
+                                            <div class="pos-data" id="pdGA3-id4">P19</div>
+                                            <div class="pos-data" id="pdGA3-id5">P03</div>
+                                            <div class="pos-data" id="pdGA3-pj1">3</div>
+                                            <div class="pos-data" id="pdGA3-pj2">1</div>
+                                            <div class="pos-data" id="pdGA3-pj3">1</div>
+                                            <div class="pos-data" id="pdGA3-pj4">1</div>
+                                            <div class="pos-data" id="pdGA3-pj5">0</div>
+                                            <div class="pos-data" id="pdGA3-pg1">2</div>
+                                            <div class="pos-data" id="pdGA3-pg2">1</div>
+                                            <div class="pos-data" id="pdGA3-pg3">0</div>
+                                            <div class="pos-data" id="pdGA3-pg4">0</div>
+                                            <div class="pos-data" id="pdGA3-pg5">0</div>
+                                            <div class="pos-data" id="pdGA3-pp1">1</div>
+                                            <div class="pos-data" id="pdGA3-pp2">0</div>
+                                            <div class="pos-data" id="pdGA3-pp3">1</div>
+                                            <div class="pos-data" id="pdGA3-pp4">1</div>
+                                            <div class="pos-data" id="pdGA3-pp5">0</div>
+                                            <div class="pos-data" id="pdGA3-sf1">27</div>
+                                            <div class="pos-data" id="pdGA3-sf2">12</div>
+                                            <div class="pos-data" id="pdGA3-sf3">9</div>
+                                            <div class="pos-data" id="pdGA3-sf4">3</div>
+                                            <div class="pos-data" id="pdGA3-sf5">0</div>
+                                            <div class="pos-data" id="pdGA3-sc1">24</div>
+                                            <div class="pos-data" id="pdGA3-sc2">2</div>
+                                            <div class="pos-data" id="pdGA3-sc3">13</div>
+                                            <div class="pos-data" id="pdGA3-sc4">12</div>
+                                            <div class="pos-data" id="pdGA3-sc5">0</div>
+                                            <div class="pos-data" id="pdGA3-ds1">3</div>
+                                            <div class="pos-data" id="pdGA3-ds2">10</div>
+                                            <div class="pos-data" id="pdGA3-ds3">-4</div>
+                                            <div class="pos-data" id="pdGA3-ds4">-9</div>
+                                            <div class="pos-data" id="pdGA3-ds5">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="posa4" class="tabcontent4">
+                                        <div class="pos-grupos5 posGruA4">
+                                            <div class="pos-data" id="pdGA4-title">Posiciones G-D</div>
+                                            <div class="pos-data" id="pdGA4-index1">N°</div>
+                                            <div class="pos-data" id="pdGA4-index2">ID</div>
+                                            <div class="pos-data" id="pdGA4-index3">PJ</div>
+                                            <div class="pos-data" id="pdGA4-index4">PG</div>
+                                            <div class="pos-data" id="pdGA4-index5">PP</div>
+                                            <div class="pos-data" id="pdGA4-index6">JF</div>
+                                            <div class="pos-data" id="pdGA4-index7">JC</div>
+                                            <div class="pos-data" id="pdGA4-index8">DJ</div>
+                                            <div class="pos-data" id="pdGA4-posic1">1</div>
+                                            <div class="pos-data" id="pdGA4-posic2">2</div>
+                                            <div class="pos-data" id="pdGA4-posic3">3</div>
+                                            <div class="pos-data" id="pdGA4-posic4">4</div>
+                                            <div class="pos-data" id="pdGA4-posic5">5</div>
+                                            <div class="pos-data" id="pdGA4-id1">P08</div>
+                                            <div class="pos-data" id="pdGA4-id2">P04</div>
+                                            <div class="pos-data" id="pdGA4-id3">P12</div>
+                                            <div class="pos-data" id="pdGA4-id4">P16</div>
+                                            <div class="pos-data" id="pdGA4-id5">P20</div>
+                                            <div class="pos-data" id="pdGA4-pj1">2</div>
+                                            <div class="pos-data" id="pdGA4-pj2">1</div>
+                                            <div class="pos-data" id="pdGA4-pj3">1</div>
+                                            <div class="pos-data" id="pdGA4-pj4">2</div>
+                                            <div class="pos-data" id="pdGA4-pj5">0</div>
+                                            <div class="pos-data" id="pdGA4-pg1">2</div>
+                                            <div class="pos-data" id="pdGA4-pg2">1</div>
+                                            <div class="pos-data" id="pdGA4-pg3">0</div>
+                                            <div class="pos-data" id="pdGA4-pg4">0</div>
+                                            <div class="pos-data" id="pdGA4-pg5">0</div>
+                                            <div class="pos-data" id="pdGA4-pp1">0</div>
+                                            <div class="pos-data" id="pdGA4-pp2">0</div>
+                                            <div class="pos-data" id="pdGA4-pp3">1</div>
+                                            <div class="pos-data" id="pdGA4-pp4">2</div>
+                                            <div class="pos-data" id="pdGA4-pp5">0</div>
+                                            <div class="pos-data" id="pdGA4-sf1">25</div>
+                                            <div class="pos-data" id="pdGA4-sf2">12</div>
+                                            <div class="pos-data" id="pdGA4-sf3">3</div>
+                                            <div class="pos-data" id="pdGA4-sf4">9</div>
+                                            <div class="pos-data" id="pdGA4-sf5">0</div>
+                                            <div class="pos-data" id="pdGA4-sc1">10</div>
+                                            <div class="pos-data" id="pdGA4-sc2">2</div>
+                                            <div class="pos-data" id="pdGA4-sc3">12</div>
+                                            <div class="pos-data" id="pdGA4-sc4">25</div>
+                                            <div class="pos-data" id="pdGA4-sc5">0</div>
+                                            <div class="pos-data" id="pdGA4-ds1">15</div>
+                                            <div class="pos-data" id="pdGA4-ds2">10</div>
+                                            <div class="pos-data" id="pdGA4-ds3">-9</div>
+                                            <div class="pos-data" id="pdGA4-ds4">-16</div>
+                                            <div class="pos-data" id="pdGA4-ds5">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="posb1" class="tabcontent4">
+                                        <div class="pos-grupos6 posGruB1">
+                                            <div class="pos-data" id="pdGB1-title">Posiciones G-E</div>
+                                            <div class="pos-data" id="pdGB1-index1">N°</div>
+                                            <div class="pos-data" id="pdGB1-index2">ID</div>
+                                            <div class="pos-data" id="pdGB1-index3">PJ</div>
+                                            <div class="pos-data" id="pdGB1-index4">PG</div>
+                                            <div class="pos-data" id="pdGB1-index5">PP</div>
+                                            <div class="pos-data" id="pdGB1-index6">JF</div>
+                                            <div class="pos-data" id="pdGB1-index7">JC</div>
+                                            <div class="pos-data" id="pdGB1-index8">DJ</div>
+                                            <div class="pos-data" id="pdGB1-posic1">1</div>
+                                            <div class="pos-data" id="pdGB1-posic2">2</div>
+                                            <div class="pos-data" id="pdGB1-posic3">3</div>
+                                            <div class="pos-data" id="pdGB1-posic4">4</div>
+                                            <div class="pos-data" id="pdGB1-posic5">5</div>
+                                            <div class="pos-data" id="pdGB1-posic6">6</div>
+                                            <div class="pos-data" id="pdGB1-id1">P21</div>
+                                            <div class="pos-data" id="pdGB1-id2">P05</div>
+                                            <div class="pos-data" id="pdGB1-id3">P01</div>
+                                            <div class="pos-data" id="pdGB1-id4">P09</div>
+                                            <div class="pos-data" id="pdGB1-id5">P13</div>
+                                            <div class="pos-data" id="pdGB1-id6">P17</div>
+                                            <div class="pos-data" id="pdGB1-pj1">1</div>
+                                            <div class="pos-data" id="pdGB1-pj2">1</div>
+                                            <div class="pos-data" id="pdGB1-pj3">0</div>
+                                            <div class="pos-data" id="pdGB1-pj4">0</div>
+                                            <div class="pos-data" id="pdGB1-pj5">0</div>
+                                            <div class="pos-data" id="pdGB1-pj6">0</div>
+                                            <div class="pos-data" id="pdGB1-pg1">1</div>
+                                            <div class="pos-data" id="pdGB1-pg2">0</div>
+                                            <div class="pos-data" id="pdGB1-pg3">0</div>
+                                            <div class="pos-data" id="pdGB1-pg4">0</div>
+                                            <div class="pos-data" id="pdGB1-pg5">0</div>
+                                            <div class="pos-data" id="pdGB1-pg6">0</div>
+                                            <div class="pos-data" id="pdGB1-pp1">0</div>
+                                            <div class="pos-data" id="pdGB1-pp2">1</div>
+                                            <div class="pos-data" id="pdGB1-pp3">0</div>
+                                            <div class="pos-data" id="pdGB1-pp4">0</div>
+                                            <div class="pos-data" id="pdGB1-pp5">0</div>
+                                            <div class="pos-data" id="pdGB1-pp6">0</div>
+                                            <div class="pos-data" id="pdGB1-sf1">13</div>
+                                            <div class="pos-data" id="pdGB1-sf2">6</div>
+                                            <div class="pos-data" id="pdGB1-sf3">0</div>
+                                            <div class="pos-data" id="pdGB1-sf4">0</div>
+                                            <div class="pos-data" id="pdGB1-sf5">0</div>
+                                            <div class="pos-data" id="pdGB1-sf6">0</div>
+                                            <div class="pos-data" id="pdGB1-sc1">6</div>
+                                            <div class="pos-data" id="pdGB1-sc2">13</div>
+                                            <div class="pos-data" id="pdGB1-sc3">0</div>
+                                            <div class="pos-data" id="pdGB1-sc4">0</div>
+                                            <div class="pos-data" id="pdGB1-sc5">0</div>
+                                            <div class="pos-data" id="pdGB1-sc6">0</div>
+                                            <div class="pos-data" id="pdGB1-ds1">7</div>
+                                            <div class="pos-data" id="pdGB1-ds2">-7</div>
+                                            <div class="pos-data" id="pdGB1-ds3">0</div>
+                                            <div class="pos-data" id="pdGB1-ds4">0</div>
+                                            <div class="pos-data" id="pdGB1-ds5">0</div>
+                                            <div class="pos-data" id="pdGB1-ds6">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="posb2" class="tabcontent4">
+                                        <div class="pos-grupos6 posGruB2">
+                                            <div class="pos-data" id="pdGB2-title">Posiciones G-F</div>
+                                            <div class="pos-data" id="pdGB2-index1">N°</div>
+                                            <div class="pos-data" id="pdGB2-index2">ID</div>
+                                            <div class="pos-data" id="pdGB2-index3">PJ</div>
+                                            <div class="pos-data" id="pdGB2-index4">PG</div>
+                                            <div class="pos-data" id="pdGB2-index5">PP</div>
+                                            <div class="pos-data" id="pdGB2-index6">JF</div>
+                                            <div class="pos-data" id="pdGB2-index7">JC</div>
+                                            <div class="pos-data" id="pdGB2-index8">DJ</div>
+                                            <div class="pos-data" id="pdGB2-posic1">1</div>
+                                            <div class="pos-data" id="pdGB2-posic2">2</div>
+                                            <div class="pos-data" id="pdGB2-posic3">3</div>
+                                            <div class="pos-data" id="pdGB2-posic4">4</div>
+                                            <div class="pos-data" id="pdGB2-posic5">5</div>
+                                            <div class="pos-data" id="pdGB2-posic6">6</div>
+                                            <div class="pos-data" id="pdGB2-id1">P10</div>
+                                            <div class="pos-data" id="pdGB2-id2">P22</div>
+                                            <div class="pos-data" id="pdGB2-id3">P02</div>
+                                            <div class="pos-data" id="pdGB2-id4">P14</div>
+                                            <div class="pos-data" id="pdGB2-id5">P06</div>
+                                            <div class="pos-data" id="pdGB2-id6">P18</div>
+                                            <div class="pos-data" id="pdGB2-pj1">2</div>
+                                            <div class="pos-data" id="pdGB2-pj2">1</div>
+                                            <div class="pos-data" id="pdGB2-pj3">1</div>
+                                            <div class="pos-data" id="pdGB2-pj4">2</div>
+                                            <div class="pos-data" id="pdGB2-pj5">0</div>
+                                            <div class="pos-data" id="pdGB2-pj6">0</div>
+                                            <div class="pos-data" id="pdGB2-pg1">2</div>
+                                            <div class="pos-data" id="pdGB2-pg2">1</div>
+                                            <div class="pos-data" id="pdGB2-pg3">0</div>
+                                            <div class="pos-data" id="pdGB2-pg4">0</div>
+                                            <div class="pos-data" id="pdGB2-pg5">0</div>
+                                            <div class="pos-data" id="pdGB2-pg6">0</div>
+                                            <div class="pos-data" id="pdGB2-pp1">0</div>
+                                            <div class="pos-data" id="pdGB2-pp2">0</div>
+                                            <div class="pos-data" id="pdGB2-pp3">1</div>
+                                            <div class="pos-data" id="pdGB2-pp4">2</div>
+                                            <div class="pos-data" id="pdGB2-pp5">0</div>
+                                            <div class="pos-data" id="pdGB2-pp6">0</div>
+                                            <div class="pos-data" id="pdGB2-sf1">27</div>
+                                            <div class="pos-data" id="pdGB2-sf2">12</div>
+                                            <div class="pos-data" id="pdGB2-sf3">6</div>
+                                            <div class="pos-data" id="pdGB2-sf4">18</div>
+                                            <div class="pos-data" id="pdGB2-sf5">0</div>
+                                            <div class="pos-data" id="pdGB2-sf6">0</div>
+                                            <div class="pos-data" id="pdGB2-sc1">20</div>
+                                            <div class="pos-data" id="pdGB2-sc2">4</div>
+                                            <div class="pos-data" id="pdGB2-sc3">12</div>
+                                            <div class="pos-data" id="pdGB2-sc4">27</div>
+                                            <div class="pos-data" id="pdGB2-sc5">0</div>
+                                            <div class="pos-data" id="pdGB2-sc6">0</div>
+                                            <div class="pos-data" id="pdGB2-ds1">7</div>
+                                            <div class="pos-data" id="pdGB2-ds2">8</div>
+                                            <div class="pos-data" id="pdGB2-ds3">-6</div>
+                                            <div class="pos-data" id="pdGB2-ds4">-9</div>
+                                            <div class="pos-data" id="pdGB2-ds5">0</div>
+                                            <div class="pos-data" id="pdGB2-ds6">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ref-grupos">
+                                    <p id="par-10"><span>G =</span> Grupo</p>
+                                    <p id="par-11"><span>N° =</span> Posición en el grupo</p>
+                                    <p id="par-12"><span>TEAM =</span> Pareja</p>
+                                    <p id="par-13"><span>PJ =</span> Partidos jugados</p>
+                                    <p id="par-14"><span>PG =</span> Partidos ganados</p>
+                                    <p id="par-15"><span>PP =</span> Partidos perdidos</p>
+                                    <p id="par-16"><span>SG =</span> Cantidad de sets ganados</p>
+                                    <p id="par-17"><span>DS =</span> Diferencia a favor o en contra de los sets ganados y perdidos</p>
+                                    <p id="par-18"><span>DG =</span> Diferencia a favor o en contra de los juegos ganados y perdidos</p>
+                                </div>
+                                <div class="ref-grupos">
+                                    <p id="par-19"><span>Criterios para definir las posiciones</span></p>
+                                    <p id="par-20"><span>1. PJ - </span> Partidos jugados</p>
+                                    <p id="par-21"><span>2. PG - </span> Partidos ganados</p>
+                                    <p id="par-22"><span>3. DS - </span> Diferencia de sets</p>
+                                    <p id="par-23"><span>4. DG - </span> Diferencia de juegos</p>
+                                    <p id="par-24"><span>5. RE - </span> Resultado entre ambos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div>
+                    <input id="ac-4" name="accordion-1" type="radio" class="ac-main" />
+                    <label for="ac-4" class="ac-title" id="lab-04">Cuadros</label>
+                    <article class="ac-large">
+                        <div class="final-div-grupos" class="tabcontent">
+                            <div class="tab">
+                                <button class="tablinks5" onclick="openPest5(event, 'finG1')" id="defaultOpen5">Grupo General</button>
+                            </div>
+                            <div id="finG1" class="tabcontent5">
+                                <div class="final-div-grupos-A" class="tabcontent">
+                                    <div class="tab">
+                                        <button class="tablinks6" onclick="openPest6(event, 'finGa1')" id="defaultOpen6">Octavos</button>
+                                        <button class="tablinks6" onclick="openPest6(event, 'finGa2')" id="but-pest-05">Cuartos</button>
+                                        <button class="tablinks6" onclick="openPest6(event, 'finGa3')" id="but-pest-06">Semifinal</button>
+                                        <button class="tablinks6" onclick="openPest6(event, 'finGa4')" id="but-pest-07">Final</button>
+                                    </div>
+                                    <div id="finGa1" class="tabcontent6 res8vosA">
+                                        <div class="partidoJ" id="ApOctFin1">
+                                            <div class="res-data" id="ApOctFin1Id">8F1</div>
+                                            <div class="res-data" id="ApOctFin1P1">1° GA</div>
+                                            <div class="res-data" id="ApOctFin1P2">4° M3</div>
+                                            <div class="res-data" id="ApOctFin1S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin1S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin1S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin1S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin1S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin1S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApOctFin2">
+                                            <div class="res-data" id="ApOctFin2Id">8F2</div>
+                                            <div class="res-data" id="ApOctFin2P1">2° GC</div>
+                                            <div class="res-data" id="ApOctFin2P2">2° GB</div>
+                                            <div class="res-data" id="ApOctFin2S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin2S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin2S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin2S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin2S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin2S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApOctFin3">
+                                            <div class="res-data" id="ApOctFin3Id">8F3</div>
+                                            <div class="res-data" id="ApOctFin3P1">1° GD</div>
+                                            <div class="res-data" id="ApOctFin3P2">1° M3</div>
+                                            <div class="res-data" id="ApOctFin3S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin3S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin3S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin3S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin3S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin3S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApOctFin4">
+                                            <div class="res-data" id="ApOctFin4Id">8F4</div>
+                                            <div class="res-data" id="ApOctFin4P1">2° GE</div>
+                                            <div class="res-data" id="ApOctFin4P2">1° GF</div>
+                                            <div class="res-data" id="ApOctFin4S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin4S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin4S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin4S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin4S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin4S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApOctFin5">
+                                            <div class="res-data" id="ApOctFin5Id">8F5</div>
+                                            <div class="res-data" id="ApOctFin5P1">1° GB</div>
+                                            <div class="res-data" id="ApOctFin5P2">3° M3</div>
+                                            <div class="res-data" id="ApOctFin5S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin5S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin5S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin5S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin5S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin5S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApOctFin6">
+                                            <div class="res-data" id="ApOctFin6Id">8F6</div>
+                                            <div class="res-data" id="ApOctFin6P1">2° GD</div>
+                                            <div class="res-data" id="ApOctFin6P2">2° GA</div>
+                                            <div class="res-data" id="ApOctFin6S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin6S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin6S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin6S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin6S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin6S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApOctFin7">
+                                            <div class="res-data" id="ApOctFin7Id">8F7</div>
+                                            <div class="res-data" id="ApOctFin7P1">1° GC</div>
+                                            <div class="res-data" id="ApOctFin7P2">2° M3</div>
+                                            <div class="res-data" id="ApOctFin7S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin7S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin7S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin7S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin7S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin7S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApOctFin8">
+                                            <div class="res-data" id="ApOctFin8Id">8F8</div>
+                                            <div class="res-data" id="ApOctFin8P1">2° GF</div>
+                                            <div class="res-data" id="ApOctFin8P2">1° GE</div>
+                                            <div class="res-data" id="ApOctFin8S1P1">0</div>
+                                            <div class="res-data" id="ApOctFin8S1P2">0</div>
+                                            <div class="res-data" id="ApOctFin8S2P1">0</div>
+                                            <div class="res-data" id="ApOctFin8S2P2">0</div>
+                                            <div class="res-data" id="ApOctFin8S3P1">0</div>
+                                            <div class="res-data" id="ApOctFin8S3P2">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="finGa2" class="tabcontent6 res4vosA">
+                                        <div class="partidoJ" id="ApCuaFin1">
+                                            <div class="res-data" id="ApCuaFin1Id">4F1</div>
+                                            <div class="res-data" id="ApCuaFin1P1">G.8F 1</div>
+                                            <div class="res-data" id="ApCuaFin1P2">G.8F 5</div>
+                                            <div class="res-data" id="ApCuaFin1S1P1">0</div>
+                                            <div class="res-data" id="ApCuaFin1S1P2">0</div>
+                                            <div class="res-data" id="ApCuaFin1S2P1">0</div>
+                                            <div class="res-data" id="ApCuaFin1S2P2">0</div>
+                                            <div class="res-data" id="ApCuaFin1S3P1">0</div>
+                                            <div class="res-data" id="ApCuaFin1S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApCuaFin2">
+                                            <div class="res-data" id="ApCuaFin2Id">4F2</div>
+                                            <div class="res-data" id="ApCuaFin2P1">G.8F 8</div>
+                                            <div class="res-data" id="ApCuaFin2P2">G.8F 4</div>
+                                            <div class="res-data" id="ApCuaFin2S1P1">0</div>
+                                            <div class="res-data" id="ApCuaFin2S1P2">0</div>
+                                            <div class="res-data" id="ApCuaFin2S2P1">0</div>
+                                            <div class="res-data" id="ApCuaFin2S2P2">0</div>
+                                            <div class="res-data" id="ApCuaFin2S3P1">0</div>
+                                            <div class="res-data" id="ApCuaFin2S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApCuaFin3">
+                                            <div class="res-data" id="ApCuaFin3Id">4F3</div>
+                                            <div class="res-data" id="ApCuaFin3P1">G.8F 2</div>
+                                            <div class="res-data" id="ApCuaFin3P2">G.8F 6</div>
+                                            <div class="res-data" id="ApCuaFin3S1P1">0</div>
+                                            <div class="res-data" id="ApCuaFin3S1P2">0</div>
+                                            <div class="res-data" id="ApCuaFin3S2P1">0</div>
+                                            <div class="res-data" id="ApCuaFin3S2P2">0</div>
+                                            <div class="res-data" id="ApCuaFin3S3P1">0</div>
+                                            <div class="res-data" id="ApCuaFin3S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApCuaFin4">
+                                            <div class="res-data" id="ApCuaFin4Id">4F4</div>
+                                            <div class="res-data" id="ApCuaFin4P1">G.8F 7</div>
+                                            <div class="res-data" id="ApCuaFin4P2">G.8F 3</div>
+                                            <div class="res-data" id="ApCuaFin4S1P1">0</div>
+                                            <div class="res-data" id="ApCuaFin4S1P2">0</div>
+                                            <div class="res-data" id="ApCuaFin4S2P1">0</div>
+                                            <div class="res-data" id="ApCuaFin4S2P2">0</div>
+                                            <div class="res-data" id="ApCuaFin4S3P1">0</div>
+                                            <div class="res-data" id="ApCuaFin4S3P2">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="finGa3" class="tabcontent6 res2vosA">
+                                        <div class="partidoJ" id="ApSemFin1">
+                                            <div class="res-data" id="ApSemFin1Id">SF1</div>
+                                            <div class="res-data" id="ApSemFin1P1">G.4F 1</div>
+                                            <div class="res-data" id="ApSemFin1P2">G.4F 4</div>
+                                            <div class="res-data" id="ApSemFin1S1P1">0</div>
+                                            <div class="res-data" id="ApSemFin1S1P2">0</div>
+                                            <div class="res-data" id="ApSemFin1S2P1">0</div>
+                                            <div class="res-data" id="ApSemFin1S2P2">0</div>
+                                            <div class="res-data" id="ApSemFin1S3P1">0</div>
+                                            <div class="res-data" id="ApSemFin1S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="ApSemFin2">
+                                            <div class="res-data" id="ApSemFin2Id">SF2</div>
+                                            <div class="res-data" id="ApSemFin2P1">G.4F 3</div>
+                                            <div class="res-data" id="ApSemFin2P2">G.4F 2</div>
+                                            <div class="res-data" id="ApSemFin2S1P1">0</div>
+                                            <div class="res-data" id="ApSemFin2S1P2">0</div>
+                                            <div class="res-data" id="ApSemFin2S2P1">0</div>
+                                            <div class="res-data" id="ApSemFin2S2P2">0</div>
+                                            <div class="res-data" id="ApSemFin2S3P1">0</div>
+                                            <div class="res-data" id="ApSemFin2S3P2">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="finGa4" class="tabcontent6 res1vosA">
+                                        <div class="partidoJ" id="ApFin1">
+                                            <div class="res-data" id="ApFin1Id">FINAL</div>
+                                            <div class="res-data" id="ApFin1P1">G.SF 1</div>
+                                            <div class="res-data" id="ApFin1P2">G.SF 2</div>
+                                            <div class="res-data" id="ApFin1S1P1">0</div>
+                                            <div class="res-data" id="ApFin1S1P2">0</div>
+                                            <div class="res-data" id="ApFin1S2P1">0</div>
+                                            <div class="res-data" id="ApFin1S2P2">0</div>
+                                            <div class="res-data" id="ApFin1S3P1">0</div>
+                                            <div class="res-data" id="ApFin1S3P2">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="finG2" class="tabcontent5">
+                                <div class="final-div-grupos-B" class="tabcontent">
+                                    <div class="tab">
+                                        <button class="tablinks7" onclick="openPest7(event, 'finGb1')" id="defaultOpen7">Octavos</button>
+                                        <button class="tablinks7" onclick="openPest7(event, 'finGb2')" id="but-pest-08">Cuartos</button>
+                                        <button class="tablinks7" onclick="openPest7(event, 'finGb3')" id="but-pest-09">Semifinal</button>
+                                        <button class="tablinks7" onclick="openPest7(event, 'finGb4')" id="but-pest-10">Final</button>
+                                    </div>
+                                    <div id="finGb1" class="tabcontent7 res8vosB">
+                                        <div class="partidoJ" id="BpOctFin1">
+                                            <div class="res-data" id="BpOctFin1Id">8F1</div>
+                                            <div class="res-data" id="BpOctFin1P1">1° G1</div>
+                                            <div class="res-data" id="BpOctFin1P2">4° G4</div>
+                                            <div class="res-data" id="BpOctFin1S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin1S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin1S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin1S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin1S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin1S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpOctFin2">
+                                            <div class="res-data" id="BpOctFin2Id">8F2</div>
+                                            <div class="res-data" id="BpOctFin2P1">2° G2</div>
+                                            <div class="res-data" id="BpOctFin2P2">3° G3</div>
+                                            <div class="res-data" id="BpOctFin2S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin2S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin2S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin2S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin2S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin2S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpOctFin3">
+                                            <div class="res-data" id="BpOctFin3Id">8F3</div>
+                                            <div class="res-data" id="BpOctFin3P1">3° G2</div>
+                                            <div class="res-data" id="BpOctFin3P2">2° G3</div>
+                                            <div class="res-data" id="BpOctFin3S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin3S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin3S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin3S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin3S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin3S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpOctFin4">
+                                            <div class="res-data" id="BpOctFin4Id">8F4</div>
+                                            <div class="res-data" id="BpOctFin4P1">4° G1</div>
+                                            <div class="res-data" id="BpOctFin4P2">1° G4</div>
+                                            <div class="res-data" id="BpOctFin4S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin4S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin4S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin4S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin4S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin4S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpOctFin5">
+                                            <div class="res-data" id="BpOctFin5Id">8F5</div>
+                                            <div class="res-data" id="BpOctFin5P1">1° G2</div>
+                                            <div class="res-data" id="BpOctFin5P2">4° G3</div>
+                                            <div class="res-data" id="BpOctFin5S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin5S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin5S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin5S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin5S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin5S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpOctFin6">
+                                            <div class="res-data" id="BpOctFin6Id">8F6</div>
+                                            <div class="res-data" id="BpOctFin6P1">2° G1</div>
+                                            <div class="res-data" id="BpOctFin6P2">3° G4</div>
+                                            <div class="res-data" id="BpOctFin6S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin6S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin6S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin6S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin6S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin6S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpOctFin7">
+                                            <div class="res-data" id="BpOctFin7Id">8F7</div>
+                                            <div class="res-data" id="BpOctFin7P1">3° G1</div>
+                                            <div class="res-data" id="BpOctFin7P2">2° G4</div>
+                                            <div class="res-data" id="BpOctFin7S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin7S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin7S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin7S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin7S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin7S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpOctFin8">
+                                            <div class="res-data" id="BpOctFin8Id">8F8</div>
+                                            <div class="res-data" id="BpOctFin8P1">4° G2</div>
+                                            <div class="res-data" id="BpOctFin8P2">1° G3</div>
+                                            <div class="res-data" id="BpOctFin8S1P1">0</div>
+                                            <div class="res-data" id="BpOctFin8S1P2">0</div>
+                                            <div class="res-data" id="BpOctFin8S2P1">0</div>
+                                            <div class="res-data" id="BpOctFin8S2P2">0</div>
+                                            <div class="res-data" id="BpOctFin8S3P1">0</div>
+                                            <div class="res-data" id="BpOctFin8S3P2">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="finGb2" class="tabcontent7 res4vosB">
+                                        <div class="partidoJ" id="BpCuaFin1">
+                                            <div class="res-data" id="BpCuaFin1Id">4F1</div>
+                                            <div class="res-data" id="BpCuaFin1P1">G.8F 1</div>
+                                            <div class="res-data" id="BpCuaFin1P2">G.8F 5</div>
+                                            <div class="res-data" id="BpCuaFin1S1P1">0</div>
+                                            <div class="res-data" id="BpCuaFin1S1P2">0</div>
+                                            <div class="res-data" id="BpCuaFin1S2P1">0</div>
+                                            <div class="res-data" id="BpCuaFin1S2P2">0</div>
+                                            <div class="res-data" id="BpCuaFin1S3P1">0</div>
+                                            <div class="res-data" id="BpCuaFin1S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpCuaFin2">
+                                            <div class="res-data" id="BpCuaFin2Id">4F2</div>
+                                            <div class="res-data" id="BpCuaFin2P1">G.8F 8</div>
+                                            <div class="res-data" id="BpCuaFin2P2">G.8F 4</div>
+                                            <div class="res-data" id="BpCuaFin2S1P1">0</div>
+                                            <div class="res-data" id="BpCuaFin2S1P2">0</div>
+                                            <div class="res-data" id="BpCuaFin2S2P1">0</div>
+                                            <div class="res-data" id="BpCuaFin2S2P2">0</div>
+                                            <div class="res-data" id="BpCuaFin2S3P1">0</div>
+                                            <div class="res-data" id="BpCuaFin2S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpCuaFin3">
+                                            <div class="res-data" id="BpCuaFin3Id">4F3</div>
+                                            <div class="res-data" id="BpCuaFin3P1">G.8F 2</div>
+                                            <div class="res-data" id="BpCuaFin3P2">G.8F 6</div>
+                                            <div class="res-data" id="BpCuaFin3S1P1">0</div>
+                                            <div class="res-data" id="BpCuaFin3S1P2">0</div>
+                                            <div class="res-data" id="BpCuaFin3S2P1">0</div>
+                                            <div class="res-data" id="BpCuaFin3S2P2">0</div>
+                                            <div class="res-data" id="BpCuaFin3S3P1">0</div>
+                                            <div class="res-data" id="BpCuaFin3S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpCuaFin4">
+                                            <div class="res-data" id="BpCuaFin4Id">4F4</div>
+                                            <div class="res-data" id="BpCuaFin4P1">G.8F 7</div>
+                                            <div class="res-data" id="BpCuaFin4P2">G.8F 3</div>
+                                            <div class="res-data" id="BpCuaFin4S1P1">0</div>
+                                            <div class="res-data" id="BpCuaFin4S1P2">0</div>
+                                            <div class="res-data" id="BpCuaFin4S2P1">0</div>
+                                            <div class="res-data" id="BpCuaFin4S2P2">0</div>
+                                            <div class="res-data" id="BpCuaFin4S3P1">0</div>
+                                            <div class="res-data" id="BpCuaFin4S3P2">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="finGb3" class="tabcontent7 res2vosB">
+                                        <div class="partidoJ" id="BpSemFin1">
+                                            <div class="res-data" id="BpSemFin1Id">SF1</div>
+                                            <div class="res-data" id="BpSemFin1P1">G.4F 1</div>
+                                            <div class="res-data" id="BpSemFin1P2">G.4F 4</div>
+                                            <div class="res-data" id="BpSemFin1S1P1">0</div>
+                                            <div class="res-data" id="BpSemFin1S1P2">0</div>
+                                            <div class="res-data" id="BpSemFin1S2P1">0</div>
+                                            <div class="res-data" id="BpSemFin1S2P2">0</div>
+                                            <div class="res-data" id="BpSemFin1S3P1">0</div>
+                                            <div class="res-data" id="BpSemFin1S3P2">0</div>
+                                        </div>
+                                        <div class="partidoJ" id="BpSemFin2">
+                                            <div class="res-data" id="BpSemFin2Id">SF2</div>
+                                            <div class="res-data" id="BpSemFin2P1">G.4F 3</div>
+                                            <div class="res-data" id="BpSemFin2P2">G.4F 2</div>
+                                            <div class="res-data" id="BpSemFin2S1P1">0</div>
+                                            <div class="res-data" id="BpSemFin2S1P2">0</div>
+                                            <div class="res-data" id="BpSemFin2S2P1">0</div>
+                                            <div class="res-data" id="BpSemFin2S2P2">0</div>
+                                            <div class="res-data" id="BpSemFin2S3P1">0</div>
+                                            <div class="res-data" id="BpSemFin2S3P2">0</div>
+                                        </div>
+                                    </div>
+                                    <div id="finGb4" class="tabcontent7 res1vosB">
+                                        <div class="partidoJ" id="BpFin1">
+                                            <div class="res-data" id="BpFin1Id">FINAL</div>
+                                            <div class="res-data" id="BpFin1P1">G.SF 1</div>
+                                            <div class="res-data" id="BpFin1P2">G.SF 2</div>
+                                            <div class="res-data" id="BpFin1S1P1">0</div>
+                                            <div class="res-data" id="BpFin1S1P2">0</div>
+                                            <div class="res-data" id="BpFin1S2P1">0</div>
+                                            <div class="res-data" id="BpFin1S2P2">0</div>
+                                            <div class="res-data" id="BpFin1S3P1">0</div>
+                                            <div class="res-data" id="BpFin1S3P2">0</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <aside class="aside-extra">
+    
+            </aside>
+        </main>
+        <footer class="footer">
+            <a href="https://marianorluna.com" target="blank" class="autor">
+                AR&#934;FI © | APP I Liga Femenina v1.0 | 2021
+            </a>
+        </footer>
+    </div>
+    <script src="./translate.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
