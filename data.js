@@ -654,16 +654,16 @@ let dataJugadores = [
 //****************************
 //****************************
 //RESULTADOS DE LOS GRUPOS
-//Resultados Grupo A1
+//Resultados Grupo A
 let resGamesA1 = [
     {
         //Partido P1
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 1,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 3,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -695,11 +695,11 @@ let resGamesA1 = [
     {
         //Partido P4
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 2,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 3,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -767,11 +767,11 @@ let resGamesA1 = [
     {
         //Partido P10
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 2,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 1,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -791,11 +791,11 @@ let resGamesA1 = [
     {
         //Partido P12
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 2,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 3,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -803,11 +803,11 @@ let resGamesA1 = [
     {
         //Partido P13
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 3,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 2,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -837,19 +837,19 @@ let resGamesA1 = [
         s3_t2: 0
     }
 ];
-//Resultados Grupo A2
+//Resultados Grupo B
 let resGamesA2 = [
     {
         //Partido P1
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 4,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 5,
+        s2_t2: 7,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 5,
+        s3_t2: 3
     },
     {
         //Partido P2
@@ -975,10 +975,10 @@ let resGamesA2 = [
         //Partido P12
         //Set1
         s1_t1: 0,
-        s1_t2: 0,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 2,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -986,11 +986,11 @@ let resGamesA2 = [
     {
         //Partido P13
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 2,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 1,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -1020,16 +1020,16 @@ let resGamesA2 = [
         s3_t2: 0
     }
 ];
-//Resultados Grupo A3
+//Resultados Grupo C
 let resGamesA3 = [
     {
         //Partido P1
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 3,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 4,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -1109,14 +1109,14 @@ let resGamesA3 = [
     {
         //Partido P8
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 3,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 4,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 3,
+        s3_t2: 7
     },
     {
         //Partido P9
@@ -1134,16 +1134,16 @@ let resGamesA3 = [
         //Partido P10
         //Set1
         s1_t1: 0,
-        s1_t2: 0,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 3,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
     }
 ];
-//Resultados Grupo A3
+//Resultados Grupo D
 let resGamesA4 = [
     {
         //Partido P1
@@ -1160,14 +1160,14 @@ let resGamesA4 = [
     {
         //Partido P2
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 2,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 4,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 2,
+        s3_t2: 6
     },
     {
         //Partido P3
@@ -1208,14 +1208,14 @@ let resGamesA4 = [
     {
         //Partido P6
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 4,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 2,
+        s2_t2: 6,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 6,
+        s3_t2: 4
     },
     {
         //Partido P7
@@ -1266,16 +1266,16 @@ let resGamesA4 = [
         s3_t2: 0
     }
 ];
-//Resultados Grupo B1
+//Resultados Grupo E
 let resGamesB1 = [
     {
         //Partido P1
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 1,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 1,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -1415,11 +1415,11 @@ let resGamesB1 = [
     {
         //Partido P13
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 3,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 7,
+        s2_t2: 5,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -1449,7 +1449,7 @@ let resGamesB1 = [
         s3_t2: 0
     }
 ];
-//Resultados Grupo B2
+//Resultados Grupo F
 let resGamesB2 = [
     {
         //Partido P1
@@ -1598,11 +1598,11 @@ let resGamesB2 = [
     {
         //Partido P13
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 3,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 7,
+        s2_t2: 5,
         //Set3
         s3_t1: 0,
         s3_t2: 0

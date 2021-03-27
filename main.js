@@ -29,7 +29,7 @@ window.addEventListener('load', function(e) {
 var notif;
 function actualNotification() {
     var notifTitle = "I Liga Femenina de Padel CSNI, bienvenid@!";
-    var notifBody = "La aplicación está actualizada al día de hoy | v1.1.2";
+    var notifBody = "La aplicación está actualizada al día de hoy "+ hoyFecha();
     //var notifBody = "Has actualizado el sistema de notificaciones. A partir de ahora estarás al tanto de las últimas noticias.";
     var notifImg = './img/icon_64.png';
     var options = {
@@ -39,6 +39,27 @@ function actualNotification() {
     notif = new Notification(notifTitle, options);
     setTimeout(actualNotification, 28800000);
 };
+
+// ***********************************************
+// ***********************************************
+// Fecha de HOY
+function hoyFecha(){
+    function addZero(i) {
+        if (i < 10) {
+            i = '0' + i;
+        }
+        return i;
+    }
+    var hoy = new Date();
+        var dd = hoy.getDate();
+        var mm = hoy.getMonth()+1;
+        var yyyy = hoy.getFullYear();
+        
+        dd = addZero(dd);
+        mm = addZero(mm);
+
+        return dd+'/'+mm+'/'+yyyy;
+}
 
 // ***********************************************
 // ***********************************************
@@ -867,7 +888,7 @@ function dataPosB1() {
         for(let p = 0; p < gamesB1.length; p++) {
             if(gamesB1[p].play == true) {
                 //suma los partidos jugados en la tabla de posiciones
-                if(gamesB1[p].team1.id_t == groupB[0].par_g[j].id_p || gamesB1[p].team2.id_t == groupB[0].par_g[j].id_p) {
+                if(gamesB1[p].team1.id_t == groupA[4].par_g[j].id_p || gamesB1[p].team2.id_t == groupA[4].par_g[j].id_p) {
                     tablePosB1[j].pj_po++;
                 }
                 //suma los partidos ganados en la tabla de posiciones
@@ -926,7 +947,7 @@ function dataPosB2() {
         for(let p = 0; p < gamesB2.length; p++) {
             if(gamesB2[p].play == true) {
                 //suma los partidos jugados en la tabla de posiciones
-                if(gamesB2[p].team1.id_t == groupB[1].par_g[j].id_p || gamesB2[p].team2.id_t == groupB[1].par_g[j].id_p) {
+                if(gamesB2[p].team1.id_t == groupA[5].par_g[j].id_p || gamesB2[p].team2.id_t == groupA[5].par_g[j].id_p) {
                     tablePosB2[j].pj_po++;
                 }
                 //suma los partidos ganados en la tabla de posiciones
@@ -2025,7 +2046,7 @@ let playCount = document.getElementsByClassName("partidoJ");
 function colorPlayGreen() {
     for(let i=0; i<playCount.length; i++) {
         if(playCount[i].children[3].innerHTML != 0 || playCount[i].children[4].innerHTML != 0) {
-            playCount[i].children[0].style.backgroundColor = "#69dfe1";
+            playCount[i].children[0].style.backgroundColor = "#fedcd3";
             playCount[i].children[0].style.color = "#666";
             playCount[i].children[0].style.fontWeight = "500";
             playCount[i].children[0].style.fontSize = "1rem";
