@@ -1073,14 +1073,14 @@ let resGamesA3 = [
     {
         //Partido P5
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 3,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 3,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 7,
+        s3_t2: 3
     },
     {
         //Partido P6
@@ -1256,11 +1256,11 @@ let resGamesA4 = [
     {
         //Partido P10
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 1,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 1,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
