@@ -1097,11 +1097,11 @@ let resGamesA3 = [
     {
         //Partido P7
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 3,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 1,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -1514,11 +1514,11 @@ let resGamesB2 = [
     {
         //Partido P6
         //Set1
-        s1_t1: 0,
+        s1_t1: 6,
         s1_t2: 0,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 1,
         //Set3
         s3_t1: 0,
         s3_t2: 0
