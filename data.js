@@ -914,14 +914,14 @@ let resGamesA2 = [
     {
         //Partido P7
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 7,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 7,
+        s2_t2: 6,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 2,
+        s3_t2: 6
     },
     {
         //Partido P8
