@@ -2061,6 +2061,16 @@ function colorPlayGreen() {
 // IMPORTANTE PARA LOS CÁLCULOS!!!
 window.addEventListener("load", colorPlayGreen() );      //resalta los partidos jugados
 
+
+// Marquesina. Cambio de texto y atributo link (cambios en TRANSLATE)
+let txtMarque = document.getElementById("text-news");
+function cambiarMarque() {
+    txtMarque.href = "https://www.worldpadeltour.com/";
+    txtMarque.innerHTML = "WPT | Adeslas Madrid Open | Finales | Streaming LINK ==>";
+}
+// IMPORTANTE PARA LOS CAMBIOS!!!
+window.addEventListener("load", cambiarMarque() );      //cambia texto de marquesina
+
 // *********************************************
 // *********************************************
 // *********************************************

@@ -909,6 +909,64 @@ section article p {
   cursor: pointer;
 }
 
+/* Marquesina de información */
+.marquesina {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquesina li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  /* Starting position */
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+       -o-transform: translateX(100%);
+          transform: translateX(100%);
+  /* Apply animation to this element */
+  -webkit-animation: marquesina 15s linear infinite;
+       -o-animation: marquesina 15s linear infinite;
+          animation: marquesina 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-webkit-keyframes marquesina {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@-o-keyframes marquesina {
+  0% {
+    -o-transform: translateX(100%);
+       transform: translateX(100%);
+  }
+  100% {
+    -o-transform: translateX(-100%);
+       transform: translateX(-100%);
+  }
+}
+@keyframes marquesina {
+  0% {
+    -webkit-transform: translateX(100%);
+         -o-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+         -o-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
 @media (max-width: 350px) {
   body {
     font-size: 12px;
@@ -971,5 +1029,11 @@ section article p {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+  }
+  .marquesina li {
+    /* Apply animation to this element */
+    -webkit-animation: marquesina 25s linear infinite;
+         -o-animation: marquesina 25s linear infinite;
+            animation: marquesina 25s linear infinite;
   }
 }
