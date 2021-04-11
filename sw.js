@@ -1,6 +1,6 @@
 ;
 //asignar un nombre y versión al cache
-const CACHE_NAME = 'v1.2.1_cache_1_ligafem_csni',
+const CACHE_NAME = 'v1.2.2_cache_1_ligafem_csni',
   urlsToCache = [
     './',
     'https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;300;400;500;700&display=swap',
