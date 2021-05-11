@@ -962,11 +962,11 @@ let resGamesA2 = [
     {
         //Partido P11
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 6,
+        s1_t2: 7,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 4,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -1049,14 +1049,14 @@ let resGamesA3 = [
     {
         //Partido P3
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 1,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 6,
+        s2_t2: 3,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 6,
+        s3_t2: 4
     },
     {
         //Partido P4
@@ -1172,14 +1172,14 @@ let resGamesA4 = [
     {
         //Partido P3
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 7,
+        s1_t2: 5,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 1,
+        s2_t2: 6,
         //Set3
-        s3_t1: 0,
-        s3_t2: 0
+        s3_t1: 1,
+        s3_t2: 6
     },
     {
         //Partido P4
@@ -1295,11 +1295,11 @@ let resGamesB1 = [
     {
         //Partido P3
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 1,
+        s1_t2: 6,
         //Set2
         s2_t1: 0,
-        s2_t2: 0,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
@@ -1562,11 +1562,11 @@ let resGamesB2 = [
     {
         //Partido P10
         //Set1
-        s1_t1: 0,
-        s1_t2: 0,
+        s1_t1: 1,
+        s1_t2: 6,
         //Set2
-        s2_t1: 0,
-        s2_t2: 0,
+        s2_t1: 2,
+        s2_t2: 6,
         //Set3
         s3_t1: 0,
         s3_t2: 0
