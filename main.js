@@ -2034,7 +2034,7 @@ function textFinalA() {
 };
 
 // IMPORTANTE PARA LOS CÁLCULOS!!! Habilitar a medida que existan resultados!!
-window.addEventListener("load", includeRes8A() );      //inners res 8vosA
+// window.addEventListener("load", includeRes8A() );      //inners res 8vosA
 // window.addEventListener("load", includeRes4A() );      //inners res 4vosA
 // window.addEventListener("load", includeRes2A() );      //inners res 2vosA
 // window.addEventListener("load", includeRes1A() );      //inners res 1vosA
