@@ -1808,18 +1808,18 @@ function octavosFA(g) {
     clasif[0] = g[0];
     clasif[1] = g[15];
     clasif[2] = g[5];
-    clasif[3] = g[3];
-    clasif[4] = g[6];
-    clasif[5] = g[12];
-    clasif[6] = g[9];
+    clasif[3] = g[11];
+    clasif[4] = g[4];
+    clasif[5] = g[13];
+    clasif[6] = g[1];
     clasif[7] = g[10];
     clasif[8] = g[2];
     clasif[9] = g[14];
     clasif[10] = g[7];
-    clasif[11] = g[1];
-    clasif[12] = g[4];
-    clasif[13] = g[13];
-    clasif[14] = g[11];
+    clasif[11] = g[9];
+    clasif[12] = g[6];
+    clasif[13] = g[12];
+    clasif[14] = g[3];
     clasif[15] = g[8];
 
     for(let i=0; i < clasif.length; i=i+2) {
