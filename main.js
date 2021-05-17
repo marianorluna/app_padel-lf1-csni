@@ -1787,10 +1787,10 @@ function obtenerClasifA() {
             };
         };
     });
-    mejoresTerceros[0] = terceros[0];
-    mejoresTerceros[1] = terceros[1];
-    mejoresTerceros[2] = terceros[2];
-    mejoresTerceros[3] = terceros[3];
+    mejoresTerceros[0] = terceros[1];
+    mejoresTerceros[1] = terceros[0];
+    mejoresTerceros[2] = terceros[3];
+    mejoresTerceros[3] = terceros[2];
     for(let i=0; i < cantMejTerceros; i++) {
         clasificadosA.push( new Clasificado(
             "M3",
@@ -2034,7 +2034,7 @@ function textFinalA() {
 };
 
 // IMPORTANTE PARA LOS CÁLCULOS!!! Habilitar a medida que existan resultados!!
-// window.addEventListener("load", includeRes8A() );      //inners res 8vosA
+window.addEventListener("load", includeRes8A() );      //inners res 8vosA
 // window.addEventListener("load", includeRes4A() );      //inners res 4vosA
 // window.addEventListener("load", includeRes2A() );      //inners res 2vosA
 // window.addEventListener("load", includeRes1A() );      //inners res 1vosA
@@ -2067,7 +2067,7 @@ let txtMarque = document.getElementById("text-news");
 function cambiarMarque() {
     //txtMarque.href = "https://www.worldpadeltour.com/";
     //txtMarque.innerHTML = "WPT | Adeslas Madrid Open | Finales | Streaming LINK ==>";
-    txtMarque.innerHTML = "Nueva fecha límite - Fase de Liga hasta 15/05/2021";
+    txtMarque.innerHTML = "CUADRO DE OCTAVOS DE FINAL";
 }
 // IMPORTANTE PARA LOS CAMBIOS!!!
 window.addEventListener("load", cambiarMarque() );      //cambia texto de marquesina
