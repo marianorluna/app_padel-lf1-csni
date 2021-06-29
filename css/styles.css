@@ -933,6 +933,19 @@ section article p {
           animation: marquesina 15s linear infinite;
 }
 
+.img-cont {
+  display: flex;
+  justify-content: center;
+}
+
+.img-info {
+  height: auto; 
+  width: auto; 
+  max-width: 95%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 /* Move it (define the animation) */
 @-webkit-keyframes marquesina {
   0% {
